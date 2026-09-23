@@ -19,35 +19,33 @@ export function Hero() {
               <div className="grid">
                 <div className="hero-s_logo">
                   <h1 data-prevent-flicker="" data-scroll-reveal="h" className="h1 a-center">
-                    Era 
-                    <br />
-                    Residence
+                    Niwaraa
                   </h1>
                   <div className="hero-s_logo_a">
-                    <h2 data-prevent-flicker="" data-scroll-reveal="a" className="a2">Estepona</h2>
+                    <h2 data-prevent-flicker="" data-scroll-reveal="a" className="a2">Interiors</h2>
                   </div>
                 </div>
               </div>
               <div className="u-48"></div>
               <div className="grid">
                 <h3 className="hero-s_title h5">
-                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-left"><div className="span">A place</div></span>
+                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-left"><div className="span">Spaces,</div></span>
                   <div data-prevent-flicker="" data-scroll-reveal="ctn" className="hero-s_tabs">
-                    <a hover-tab="" aria-label="by day" hover-nav-item-l2="" data-tab-trigger="day" href="#" className="nav-item w-inline-block">
+                    <a hover-tab="" aria-label="Residential" hover-nav-item-l2="" data-tab-trigger="day" href="#" className="nav-item w-inline-block">
                       <div className="nav-item_label">
-                        <div hover="text" className="nav-item_label_text"><div className="l2">by day</div></div>
-                        <div hover="text" className="nav-item_label_text is-2"><div className="l2">by day</div></div>
+                        <div hover="text" className="nav-item_label_text"><div className="l2">Residential</div></div>
+                        <div hover="text" className="nav-item_label_text is-2"><div className="l2">Residential</div></div>
                       </div>
                     </a>
                     <div className="hero-s_tabs_divider"></div>
-                    <a hover-tab="" aria-label="by night" hover-nav-item-l2="" data-tab-trigger="night" href="#" className="nav-item w-inline-block">
+                    <a hover-tab="" aria-label="Commercial" hover-nav-item-l2="" data-tab-trigger="night" href="#" className="nav-item w-inline-block">
                       <div className="nav-item_label">
-                        <div hover="text" className="nav-item_label_text"><div className="l2">by night</div></div>
-                        <div hover="text" className="nav-item_label_text is-2"><div className="l2">by night</div></div>
+                        <div hover="text" className="nav-item_label_text"><div className="l2">Commercial</div></div>
+                        <div hover="text" className="nav-item_label_text is-2"><div className="l2">Commercial</div></div>
                       </div>
                     </a>
                   </div>
-                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-right"><div className="span">to return to</div></span>
+                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-right"><div className="span">Made Personal</div></span>
                 </h3>
               </div>
             </div>
@@ -114,12 +112,12 @@ export function Hero() {
                   </div>
                   <div data-tab-content="day" className="hero-w_bg_master_img_day">
                     <div data-tab="img" className="img-w h-auto">
-                      <img loading="eager" src="/images/era-residence_gated-community_day.webp" alt="" sizes="(max-width: 1920px) 100vw, 1920px" srcSet="/images/era-residence_gated-community_day-p-500.webp 500w, /images/era-residence_gated-community_day-p-800.webp 800w, /images/era-residence_gated-community_day-p-1080.webp 1080w, /images/era-residence_gated-community_day-p-1600.webp 1600w, /images/era-residence_gated-community_day.webp 1920w" className="img h-auto hero-img" />
+                      <img loading="eager" src="/images/hero1.png" alt="Niwaraa interior design — warm Japandi living room with natural wood and neutral tones" sizes="(max-width: 1920px) 100vw, 1920px" className="img h-auto hero-img" />
                     </div>
                   </div>
                   <div data-tab-content="night" className="hero-w_bg_master_img_night">
                     <div data-tab="img" className="img-w h-auto">
-                      <img loading="eager" src="/images/era-residence_gated-community_night.webp" alt="" sizes="(max-width: 1920px) 100vw, 1920px" srcSet="/images/era-residence_gated-community_night-p-500.webp 500w, /images/era-residence_gated-community_night-p-800.webp 800w, /images/era-residence_gated-community_night-p-1080.webp 1080w, /images/era-residence_gated-community_night-p-1600.webp 1600w, /images/era-residence_gated-community_night.webp 1920w" className="img h-auto hero-img" />
+                      <img loading="eager" src="/images/hero4.png" alt="Niwaraa commercial interior design — refined workspace with natural materials and warm lighting" sizes="(max-width: 1920px) 100vw, 1920px" className="img h-auto hero-img" />
                     </div>
                   </div>
                   <div className="img-over-grad from-top _100vh"></div>
@@ -131,13 +129,13 @@ export function Hero() {
                     <div className="e-auto">
                       <div hover-btn-circle="" data-magnetic-btn="" hover-nav-item-trigger="" className="btn-circle">
                         <div data-magnetic-inner="" className="btn-circle_label">
-                          <a hover-nav-item="" aria-label="View available apartments" href="/apartments" className="nav-item w-inline-block">
+                          <a hover-nav-item="" aria-label="Get in touch" href="/contact" className="nav-item w-inline-block">
                             <div className="nav-item_label">
                               <div className="nav-item_label_text">
-                                <div hover="text" className="l1">View available apartments</div>
+                                <div hover="text" className="l1">Get in touch</div>
                               </div>
                               <div className="nav-item_label_text is-2">
-                                <div hover="text" className="l1">View available apartments</div>
+                                <div hover="text" className="l1">Get in touch</div>
                               </div>
                             </div>
                           </a>
@@ -149,13 +147,13 @@ export function Hero() {
                             <circle cx="104" cy="104" r="103.5" stroke="var(--_colors---base-1000--line)" strokeWidth="1" fill="none"></circle>
                           </svg>
                         </div>
-                        <a aria-label="View available apartments" href="/apartments" className="btn-circle_link w-inline-block"></a>
+                        <a aria-label="Get in touch" href="/contact" className="btn-circle_link w-inline-block"></a>
                       </div>
                     </div>
                   </div>
                   <div className="u-32"></div>
                   <div className="grid">
-                    <div className="hero-s_desc"><p className="l1 a-center"></p></div>
+                    <div className="hero-s_desc"><p className="l1 a-center">Thoughtfully designed interiors shaped around the way you live, work and experience a space.</p></div>
                   </div>
                   <div className="u-48"></div>
                 </div>

@@ -27,31 +27,31 @@ export function ApartmentsPreview() {
                             <div className="apart-type-slide_data">
                               <div className="data-list">
                                 <div className="data-item">
-                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Bedrooms</h4>
+                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Category</h4>
                                   <div className="u-8"></div>
-                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">3</h5>
+                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">Residential</h5>
                                 </div>
                                 <div className="data-item">
-                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Area up to</h4>
+                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Focus</h4>
                                   <div className="u-8"></div>
-                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">178 — 202 m²</h5>
+                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">Living Rooms</h5>
                                 </div>
                               </div>
                               <div className="u-48 b-mob"></div>
                             </div>
                             <div className="apart-type-slide_desc">
                               <p data-scroll-reveal="p" data-slider="p" className="p1 mob_a-center">
-                                Private basement, direct outdoor access and a dedicated lower level.
+                                Spaces designed for comfort, connection and everyday living.
                               </p>
                               <div className="u-24"></div>
                               <div data-scroll-reveal="ctn" data-slider="ctn" className="apart-type-slide_btn">
-                                <a aria-label="Explore Ground + basement" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/apartments?type=ground-floor-basement" className="btn w-inline-block">
+                                <a aria-label="Explore Living Rooms" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/services/living-rooms" className="btn w-inline-block">
                                   <div className="btn_label">
                                     <div className="btn_label_text">
-                                      <div hover="text" className="l1">Explore Ground + basement</div>
+                                      <div hover="text" className="l1">Explore Living Rooms</div>
                                     </div>
                                     <div className="btn_label_text is-2">
-                                      <div hover="text" className="l1">Explore Ground + basement</div>
+                                      <div hover="text" className="l1">Explore Living Rooms</div>
                                     </div>
                                   </div>
                                   <div className="btn_bg"><div hover="bg" className="btn_bg_fill"></div></div>
@@ -63,7 +63,7 @@ export function ApartmentsPreview() {
                         </div>
                         <div className="apart-type-slide_b">
                           <div className="u-48 b-desk"></div>
-                          <h3 data-scroll-reveal="h" data-slider="h" className="h2 a-center">Ground floor + basement</h3>
+                          <h3 data-scroll-reveal="h" data-slider="h" className="h2 a-center">Living Rooms</h3>
                           <div className="u-32 b-mob"></div>
                         </div>
                         <div className="apart-type-slide_img-w">
@@ -83,28 +83,28 @@ export function ApartmentsPreview() {
                             <div className="apart-type-slide_data">
                               <div className="data-list">
                                 <div className="data-item">
-                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Bedrooms</h4>
+                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Category</h4>
                                   <div className="u-8"></div>
-                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">2</h5>
+                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">Residential</h5>
                                 </div>
                                 <div className="data-item">
-                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Area up to</h4>
+                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Focus</h4>
                                   <div className="u-8"></div>
-                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">97 — 104 m²</h5>
+                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">Kitchens</h5>
                                 </div>
                               </div>
                               <div className="u-48 b-mob"></div>
                             </div>
                             <div className="apart-type-slide_desc">
                               <p data-scroll-reveal="p" data-slider="p" className="p1 mob_a-center">
-                                Step directly onto your terrace and into the communal gardens, blending indoor comfort with outdoor living.
+                                Where thoughtful planning meets beautiful materials and effortless functionality.
                               </p>
                               <div className="u-24"></div>
                               <div data-scroll-reveal="ctn" data-slider="ctn" className="apart-type-slide_btn">
-                                <a aria-label="Explore Ground floor" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/apartments?type=ground-floor" className="btn w-inline-block">
+                                <a aria-label="Explore Kitchens" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/services/kitchens" className="btn w-inline-block">
                                   <div className="btn_label">
-                                    <div className="btn_label_text"><div hover="text" className="l1">Explore Ground floor</div></div>
-                                    <div className="btn_label_text is-2"><div hover="text" className="l1">Explore Ground floor</div></div>
+                                    <div className="btn_label_text"><div hover="text" className="l1">Explore Kitchens</div></div>
+                                    <div className="btn_label_text is-2"><div hover="text" className="l1">Explore Kitchens</div></div>
                                   </div>
                                   <div className="btn_bg"><div hover="bg" className="btn_bg_fill"></div></div>
                                 </a>
@@ -115,7 +115,7 @@ export function ApartmentsPreview() {
                         </div>
                         <div className="apart-type-slide_b">
                           <div className="u-48 b-desk"></div>
-                          <h3 data-scroll-reveal="h" data-slider="h" className="h2 a-center">Ground Floor</h3>
+                          <h3 data-scroll-reveal="h" data-slider="h" className="h2 a-center">Kitchens</h3>
                           <div className="u-32 b-mob"></div>
                         </div>
                         <div className="apart-type-slide_img-w">
@@ -135,28 +135,28 @@ export function ApartmentsPreview() {
                             <div className="apart-type-slide_data">
                               <div className="data-list">
                                 <div className="data-item">
-                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Bedrooms</h4>
+                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Category</h4>
                                   <div className="u-8"></div>
-                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">2-3</h5>
+                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">Commercial</h5>
                                 </div>
                                 <div className="data-item">
-                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Area up to</h4>
+                                  <h4 data-scroll-reveal="p" data-slider="p" className="l1 reg">Focus</h4>
                                   <div className="u-8"></div>
-                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">124 — 243 m²</h5>
+                                  <h5 data-scroll-reveal="p" data-slider="p" className="h5">Office Spaces</h5>
                                 </div>
                               </div>
                               <div className="u-48 b-mob"></div>
                             </div>
                             <div className="apart-type-slide_desc">
                               <p data-scroll-reveal="p" data-slider="p" className="p1 mob_a-center">
-                                Two floors crowned with panoramic views and a private rooftop solarium — the ultimate expression of luxury living.
+                                Work environments designed to reflect identity, culture and the people within them.
                               </p>
                               <div className="u-24"></div>
                               <div data-scroll-reveal="ctn" data-slider="ctn" className="apart-type-slide_btn">
-                                <a aria-label="Explore Penthouses" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/apartments?type=penthouse-duplex" className="btn w-inline-block">
+                                <a aria-label="Explore Office Spaces" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/services/office-spaces" className="btn w-inline-block">
                                   <div className="btn_label">
-                                    <div className="btn_label_text"><div hover="text" className="l1">Explore Penthouses</div></div>
-                                    <div className="btn_label_text is-2"><div hover="text" className="l1">Explore Penthouses</div></div>
+                                    <div className="btn_label_text"><div hover="text" className="l1">Explore Office Spaces</div></div>
+                                    <div className="btn_label_text is-2"><div hover="text" className="l1">Explore Office Spaces</div></div>
                                   </div>
                                   <div className="btn_bg"><div hover="bg" className="btn_bg_fill"></div></div>
                                 </a>
@@ -167,7 +167,7 @@ export function ApartmentsPreview() {
                         </div>
                         <div className="apart-type-slide_b">
                           <div className="u-48 b-desk"></div>
-                          <h3 data-scroll-reveal="h" data-slider="h" className="h2 a-center">Penthouse duplex</h3>
+                          <h3 data-scroll-reveal="h" data-slider="h" className="h2 a-center">Office Spaces</h3>
                           <div className="u-32 b-mob"></div>
                         </div>
                         <div className="apart-type-slide_img-w">

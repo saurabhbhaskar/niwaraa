@@ -9,10 +9,10 @@
 
 export function PillarsMedia() {
   return (
-    <section className="section z-2 theme_on-brand">
+    <section data-bg="light" className="section z-2 clip">
       <div className="container">
         <div className="quote-w">
-          <div className="quote-s b-desk theme_on-color">
+          <div className="quote-s theme_on-color">
             <div className="grid">
               <div className="quote-s_c w-clearfix">
                 <div className="grid _4-columns">
@@ -29,13 +29,13 @@ export function PillarsMedia() {
                 </div>
                 <div className="red-line"></div>
                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                  Instead of corridors, walking paths connect the apartments — making Era Residence feel closer to a group of private homes than a standard
+                  Every space has a story. We help you shape yours.
                 </h4>
                 <div className="u-64"></div>
                 <div className="grid _4-columns">
                   <div className="quote-s_author">
-                    <div data-scroll-reveal="p" className="l1">Architecture Team</div>
-                    <div data-scroll-reveal="p" className="l1 reg">Era Residence</div>
+                    <div data-scroll-reveal="p" className="l1">Niwaraa</div>
+                    <div data-scroll-reveal="p" className="l1 reg">Interior Design Studio</div>
                   </div>
                 </div>
               </div>
@@ -46,7 +46,9 @@ export function PillarsMedia() {
             <div className="img-w h-auto quote-w_bg_img">
               <div className="img-over-grad from-bot bot _4x b-desk"></div>
               <div className="img-over-grad from-bot bot _4x b-desk"></div>
-              <img className="img h-auto quote-w_bg_img" src="/images/img_cam_05_alpha.webp" alt="Modern building with flowering vines beside a rectangular swimming pool and palm trees." sizes="(max-width: 1920px) 100vw, 1920px" data-parallax="img-out" loading="eager" srcSet="/images/img_cam_05_alpha-p-500.png 500w, /images/img_cam_05_alpha-p-800.png 800w, /images/img_cam_05_alpha-p-1080.png 1080w, /images/img_cam_05_alpha.webp 1920w" />
+              <div className="img-over-grad from-bot bot _4x b-mob"></div>
+              <div className="img-over-grad from-bot bot _4x b-mob"></div>
+              <img className="img h-auto quote-w_bg_img" src="/images/hero3.png" alt="Niwaraa interior design — thoughtfully crafted living space" sizes="(max-width: 1920px) 100vw, 1920px" data-parallax="img-out" loading="eager" />
             </div>
           </div>
           <div className="w_themes">

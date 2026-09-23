@@ -18,21 +18,21 @@ import '@/styles/globals.css';
  * Dominio público del sitio. Al pasar a producción con el dominio del
  * cliente, cambiar aquí: alimenta las URLs absolutas de Open Graph.
  */
-const SITE_URL = 'https://www.era-residence.com';
+const SITE_URL = 'https://www.niwaraa.com';
 
 /** Contenedor de Google Tag Manager del sitio original. */
 const GTM_ID = 'GTM-WMDRV3P6';
 
-const TITLE = 'ERA Residence — Contemporary Mediterranean Residences in Estepona';
+const TITLE = 'Niwaraa — Thoughtful Interior Design Studio in India';
 const DESCRIPTION =
-  'Boutique residences on the New Golden Mile combining contemporary architecture, ' +
-  'natural materials and resort-style living near Marbella and Estepona.';
+  'Spaces, made personal. Niwaraa is an interior design studio creating refined, ' +
+  'functional and timeless residential and commercial interiors across India.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: TITLE,
-    template: '%s — ERA Residence',
+    template: '%s — Niwaraa',
   },
   description: DESCRIPTION,
   openGraph: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: SITE_URL,
-    siteName: 'ERA Residence',
+    siteName: 'Niwaraa',
     images: [{ url: '/images/open-graph.webp', width: 1200, height: 630 }],
     videos: [{ url: '/videos/open-graph.mp4', type: 'video/mp4', width: 1200, height: 630 }],
   },

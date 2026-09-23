@@ -1,12 +1,8 @@
 import { ScrollRail } from '@/components/layout/ScrollRail';
 import { Hero } from '@/components/home/Hero';
 import { Arch } from '@/components/home/Arch';
-import { Pillars } from '@/components/home/Pillars';
 import { PillarsMedia } from '@/components/home/PillarsMedia';
 import { Concept } from '@/components/home/Concept';
-import { Location } from '@/components/home/Location';
-import { ApartmentsPreview } from '@/components/home/ApartmentsPreview';
-import { AmenitiesIntro } from '@/components/home/AmenitiesIntro';
 import { Amenities } from '@/components/sections/Amenities';
 import { SpaceToLive } from '@/components/home/SpaceToLive';
 import { Architecture } from '@/components/home/Architecture';
@@ -23,15 +19,11 @@ export default function HomePage() {
     <>
       <ScrollRail />
       <Hero />
-      <Arch />
-      <Pillars />
+      <SpaceToLive />
       <PillarsMedia />
       <Concept />
-      <Location />
-      <ApartmentsPreview />
-      <AmenitiesIntro />
       <Amenities />
-      <SpaceToLive />
+      <Arch />
       <Architecture />
       <Developer />
       <SeaViewsCta />

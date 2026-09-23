@@ -79,6 +79,460 @@ html {
   font-size: calc(var(--_fonts---h1--size) * 0.84);
 }
 
+/* Faint velvet-plum tint — same role as powder-sky, but in the hero purple family */
+.modal.menu .modal_menu_title .h1 {
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .quote-w .quote-s {
+    position: absolute;
+    inset: auto 0% 0%;
+    z-index: 2;
+    padding-bottom: var(--_units---u-48);
+  }
+
+  .quote-w .quote-s_c {
+    grid-column: 1 / -1;
+    padding-inline: var(--_special-units---offset-l);
+  }
+
+  .quote-w .quote-s .h5 {
+    text-align: center;
+  }
+
+  .quote-w .quote-s_author {
+    text-align: center;
+  }
+
+  .quote-w_bg_img {
+    min-height: 70vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+:root,
+body {
+  --_global-colors---brand-500--velvet-plum-tint: color-mix(
+    in srgb,
+    var(--_global-colors---brand-500--velvet-plum) 12%,
+    #fff
+  );
+}
+
+.section.arch.theme_on-brand,
+.related-services.theme_on-brand,
+.section.theme_on-brand:has(.contact-w),
+.modal_cta.theme_on-brand {
+  --_colors---other--bg: var(--_global-colors---brand-500--velvet-plum-tint);
+}
+
+.section:has(.arch-scroll-area) {
+  --_colors---other--bg: var(--_global-colors---brand-500--velvet-plum-tint);
+}
+
+.arch-scroll-area .arch-intro-s_bg_l,
+.arch-scroll-area .arch-intro-s_bg_r {
+  background-color: var(--_global-colors---brand-500--velvet-plum-tint);
+}
+
+@media (max-width: 991px) {
+  .arch-scroll-area .arch-s {
+    aspect-ratio: auto;
+    min-height: auto;
+    padding-bottom: var(--_units---u-32);
+  }
+
+  .arch-scroll-area .arch-s_desc,
+  .arch-scroll-area .arch-s_mobile-copy {
+    grid-column: 1 / -1;
+    padding-inline: var(--_special-units---offset-l);
+    pointer-events: auto;
+  }
+
+  .arch-scroll-area .arch-s_mobile-copy .p1,
+  .arch-scroll-area .arch-s_mobile-copy .l1 {
+    color: var(--_colors---base-0--primary);
+  }
+
+  .arch-scroll-area .arch_themes {
+    display: none;
+  }
+
+  .arch-scroll-area .arch-w > .w_bg .arch-approach-img-w {
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    max-height: min(72vh, 640px);
+    width: 100%;
+  }
+
+  .arch-scroll-area .arch-w > .w_bg .arch-approach-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: none !important;
+  }
+}
+
+/* Horizontal service cards in the Our Work section */
+.loc-services-w {
+  flex: none;
+  width: max-content;
+  position: relative;
+}
+
+.loc-services-s {
+  height: var(--_special-units---100vh);
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--_units---u-96);
+  padding-right: var(--_special-units---offset-r);
+  padding-left: var(--_special-units---offset-l);
+}
+
+.loc-services-cards {
+  display: flex;
+  flex-flow: row nowrap;
+  grid-template-columns: unset;
+  width: max-content;
+  column-gap: var(--_special-units---grid-gap);
+}
+
+.loc-services-cards > .apart-cms_list_item {
+  flex: none;
+  width: calc((var(--_special-units---1-cell-h) * 2.75) + (var(--_special-units---grid-gap) * 2));
+}
+
+.loc-services-cards .apart-card {
+  padding: var(--_units---u-32) var(--_units---u-24) var(--_units---u-24);
+  aspect-ratio: 392 / 620;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.loc-services-cards .apart-card_c {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.loc-services-cards .apart-card_img {
+  flex: none;
+  aspect-ratio: 4 / 3;
+}
+
+.loc-services-cards .apart-card_b {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.loc-services-cards .apart-card_info {
+  width: 100%;
+}
+
+.loc-services-cards .apart-card_info .h5 {
+  font-size: calc(var(--_fonts---h5--size) * 0.9);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.loc-services-cards .apart-card_add {
+  width: 100%;
+}
+
+.loc-services-cards .apart-card_add .l1 {
+  font-size: calc(var(--_fonts---l1--size) * 0.92);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+#our-work .loc-services-s {
+  padding-bottom: var(--_units---u-64);
+}
+
+@media (max-width: 991px) {
+  .loc-services-w {
+    width: 100%;
+  }
+
+  .loc-services-s {
+    height: auto;
+    padding-top: var(--_units---u-48);
+    padding-bottom: var(--_units---u-96);
+  }
+
+  .loc-services-cards {
+    flex-flow: column;
+    width: 100%;
+    row-gap: var(--_units---u-48);
+  }
+
+  .loc-services-cards > .apart-cms_list_item {
+    width: 100%;
+  }
+
+  .loc-services-cards .apart-card {
+    aspect-ratio: auto;
+    min-height: 0;
+  }
+
+  .loc-services-cards .apart-card_info .h5 {
+    font-size: calc(var(--_fonts---h5--size) * 0.85);
+    padding-inline: var(--_units---u-8);
+  }
+
+  .loc-services-cards .apart-card_add .l1 {
+    font-size: calc(var(--_fonts---l1--size) * 0.88);
+    padding-inline: var(--_units---u-8);
+  }
+
+  #our-work .loc-scroll-area_screen {
+    padding-bottom: var(--_units---u-48);
+  }
+}
+
+#our-work .slow-scroll-trigger {
+  display: none;
+}
+
+/* Service detail — related cards grid */
+.related-services .apart-s_cms,
+.related-services .apart-cms,
+.related-services .related-services-cards {
+  width: 100%;
+  min-width: 0;
+}
+
+.related-services .apart-cms_list.related-services-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: var(--_special-units---grid-gap);
+  row-gap: var(--_special-units---grid-gap);
+  align-items: stretch;
+}
+
+.related-services .related-services-cards > .apart-cms_list_item {
+  min-width: 0;
+  width: 100%;
+}
+
+.related-services .related-services-cards .apart-card {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--_units---u-32) var(--_units---u-20) var(--_units---u-24);
+}
+
+.related-services .related-services-cards .apart-card_c {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.related-services .related-services-cards .apart-card_img {
+  flex: none;
+  aspect-ratio: 4 / 3;
+}
+
+.related-services .related-services-cards .apart-card_b {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+.related-services .related-services-cards .apart-card_info .h5 {
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.related-services .related-services-cards .apart-card_add .l1 {
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  color: var(--_colors---base-1000--gray-text);
+}
+
+@media (min-width: 992px) {
+  .related-services .apart-s_title .h2 {
+    white-space: nowrap;
+  }
+
+  .related-services .related-services-cards .apart-card_info .h5 {
+    font-size: calc(var(--_fonts---h5--size) * 0.95);
+  }
+
+  .related-services .related-services-cards .apart-card_add .l1 {
+    font-size: calc(var(--_fonts---l1--size) * 0.92);
+  }
+}
+
+@media (max-width: 991px) {
+  .related-services .apart-cms_list.related-services-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--_units---u-16);
+    row-gap: var(--_units---u-24);
+  }
+
+  .related-services .apart-s_cms {
+    grid-column: 1 / -1;
+    overflow: visible;
+  }
+
+  .related-services .related-services-cards .apart-card {
+    padding: var(--_units---u-20) var(--_units---u-12) var(--_units---u-16);
+  }
+
+  .related-services .related-services-cards .apart-card_img {
+    aspect-ratio: 1;
+  }
+
+  .related-services .related-services-cards .apart-card_t .l2 {
+    font-size: calc(var(--_fonts---l2--size) * 0.85);
+  }
+
+  .related-services .related-services-cards .apart-card_info .h5 {
+    font-size: calc(var(--_fonts---h5--size) * 0.72);
+    line-height: 1.2;
+    hyphens: auto;
+  }
+
+  .related-services .related-services-cards .apart-card_add .l1 {
+    font-size: calc(var(--_fonts---l1--size) * 0.78);
+    line-height: 1.3;
+  }
+}
+
+/* Niwaraa brand logo (replaces ERA SVG symbol site-wide) */
+.logo.w-embed .niwaraa-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.logo.w-embed .niwaraa-logo--white {
+  display: none;
+}
+
+.theme_on-dark .logo.w-embed .niwaraa-logo--default,
+.theme_on-color .logo.w-embed .niwaraa-logo--default {
+  display: none;
+}
+
+.theme_on-dark .logo.w-embed .niwaraa-logo--white,
+.theme_on-color .logo.w-embed .niwaraa-logo--white {
+  display: block;
+}
+
+/* Header corner: logo follows the same scroll theme as the ring text */
+.header-logo.theme_on-light .logo.w-embed .niwaraa-logo--default {
+  display: block;
+}
+
+.header-logo.theme_on-light .logo.w-embed .niwaraa-logo--white {
+  display: none;
+}
+
+.header-logo.theme_on-dark .logo.w-embed .niwaraa-logo--default,
+.header-logo.theme_on-color .logo.w-embed .niwaraa-logo--default {
+  display: none;
+}
+
+.header-logo.theme_on-dark .logo.w-embed .niwaraa-logo--white,
+.header-logo.theme_on-color .logo.w-embed .niwaraa-logo--white {
+  display: block;
+}
+
+/* Slightly larger mark in the fixed header corner only */
+.header-logo .logo_symbol.header {
+  width: calc(var(--_units---u-48) * 1.18);
+  height: calc(var(--_units---u-48) * 1.18);
+}
+
+/* White asset has more padding — scale to match the colored mark */
+.header-logo .logo.w-embed .niwaraa-logo--white {
+  transform: scale(1.72);
+  transform-origin: center center;
+}
+
+.footer-s_contact .logo_symbol.ico-64 {
+  width: calc(var(--_units---u-64) * 1.28);
+  height: calc(var(--_units---u-64) * 1.28);
+}
+
+.footer-s_contact .logo.w-embed .niwaraa-logo--white {
+  transform: scale(1.72);
+  transform-origin: center center;
+}
+
+.footer-s_contact .footer-s_email .l1 {
+  font-size: calc(var(--_fonts---l1--size) * 1.08);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.footer-s_contact .footer-s_phone {
+  margin-top: var(--_units---u-8);
+}
+
+.footer-s_contact .footer-s_phone .l1 {
+  font-size: var(--_fonts---l1--size);
+  line-height: 1.4;
+}
+
+.contact-s_email .contact-s_email-link .l1 {
+  font-size: calc(var(--_fonts---l1--size) * 1.12);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.contact-s_social .social-btn,
+.footer-s_social .social-btn {
+  cursor: default;
+}
+
+.footer-s_social {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-s_social .social-cms_list {
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-end;
+  outline: none !important;
+  gap: var(--_units---u-4);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-s_social .social-btn_line {
+  display: none;
+}
+
+.footer-s_social .social-btn .ico {
+  color: #fff !important;
+}
+
+.header-logo_bg text {
+  text-transform: lowercase;
+}
+
 :root,
 body {
   --_fonts---font-display:

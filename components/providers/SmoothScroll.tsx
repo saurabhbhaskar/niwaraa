@@ -59,11 +59,37 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
-  // Al cambiar de ruta: arriba del todo y recalcular disparadores. Sin esto,
-  // ScrollTrigger conserva las medidas de la página anterior.
+  // Al cambiar de ruta: ir al hash si existe (p. ej. /#our-work), si no arriba.
   useEffect(() => {
-    lenisRef.current?.scrollTo(0, { immediate: true });
-    ScrollTrigger.refresh(true);
+    const lenis = lenisRef.current;
+    if (!lenis) return;
+
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (!hash) {
+        lenis.scrollTo(0, { immediate: true });
+        ScrollTrigger.refresh(true);
+        return;
+      }
+
+      const target = document.querySelector<HTMLElement>(hash);
+      if (!target) {
+        lenis.scrollTo(0, { immediate: true });
+        ScrollTrigger.refresh(true);
+        return;
+      }
+
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          lenis.scrollTo(target, { duration: 1.2 });
+          ScrollTrigger.refresh(true);
+        }, 120);
+      });
+    };
+
+    scrollToHash();
+    window.addEventListener('hashchange', scrollToHash);
+    return () => window.removeEventListener('hashchange', scrollToHash);
   }, [pathname]);
 
   return <>{children}</>;

@@ -23,13 +23,13 @@ export function Amenities() {
                           <div className="amen-slide_b">
                             <div className="grid">
                               <div className="amen-slide_title">
-                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Gated community</h3>
+                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Interior Design</h3>
                                 <div className="u-32"></div>
                               </div>
                               <div className="amen-slide_desc w-clearfix">
                                 <div className="red-line"></div>
                                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                                  Instead of corridors, walking paths connect the apartments — making Era Residence feel closer to a group of private homes than a standard
+                                  Concepts, layouts, materials and details thoughtfully developed around your space.
                                 </h4>
                               </div>
                             </div>
@@ -38,7 +38,13 @@ export function Amenities() {
                           <div className="amen-slide_img">
                             <div data-tab="slide" className="img-w">
                               <div className="img-w">
-                                <img data-parallax="img-in" loading="eager" alt="" src="/images/era-residence-gated-community.webp" sizes="100vw" srcSet="/images/era-residence-gated-community-p-500.webp 500w, /images/era-residence-gated-community-p-800.webp 800w, /images/era-residence-gated-community-p-1080.webp 1080w, /images/era-residence-gated-community-p-1600.webp 1600w, /images/era-residence-gated-community.webp 1920w" className="img-p" />
+                                <img
+                                  data-parallax="img-in"
+                                  loading="eager"
+                                  alt="Niwaraa interior design — concepts, layouts and materials"
+                                  src="/images/services/pic7.png"
+                                  className="img-p"
+                                />
                               </div>
                               <div className="img-over-grad from-top"></div>
                               <div className="img-over-grad from-bot _4x bot"></div>
@@ -51,13 +57,13 @@ export function Amenities() {
                           <div className="amen-slide_b">
                             <div className="grid">
                               <div className="amen-slide_title">
-                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Swimming Pool</h3>
+                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Space Planning</h3>
                                 <div className="u-32"></div>
                               </div>
                               <div className="amen-slide_desc w-clearfix">
                                 <div className="red-line"></div>
                                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                                  Saltwater swimming pool, Children’s pool, Sauna, jacuzzi and wellness shower
+                                  Intelligent planning that brings together movement, functionality and proportion.
                                 </h4>
                               </div>
                             </div>
@@ -79,13 +85,13 @@ export function Amenities() {
                           <div className="amen-slide_b">
                             <div className="grid">
                               <div className="amen-slide_title">
-                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Parking area</h3>
+                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Turnkey Interiors</h3>
                                 <div className="u-32"></div>
                               </div>
                               <div className="amen-slide_desc w-clearfix">
                                 <div className="red-line"></div>
                                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                                  Each parking space includes pre-installation for optional EV charging.
+                                  A complete journey from design development to execution and finishing.
                                 </h4>
                               </div>
                             </div>
@@ -107,13 +113,13 @@ export function Amenities() {
                           <div className="amen-slide_b">
                             <div className="grid">
                               <div className="amen-slide_title">
-                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Spa & gym</h3>
+                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Renovation</h3>
                                 <div className="u-32"></div>
                               </div>
                               <div className="amen-slide_desc w-clearfix">
                                 <div className="red-line"></div>
                                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                                  Designed exclusively for residents and their guests, the amenities at ERA encourage a slower and more balanced Mediterranean lifestyle
+                                  Reimagining existing spaces with a fresh perspective and purposeful design.
                                 </h4>
                               </div>
                             </div>
@@ -135,13 +141,13 @@ export function Amenities() {
                           <div className="amen-slide_b">
                             <div className="grid">
                               <div className="amen-slide_title">
-                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Landscaping</h3>
+                                <h3 data-scroll-reveal="p" data-tab="p" className="l1">Custom Details</h3>
                                 <div className="u-32"></div>
                               </div>
                               <div className="amen-slide_desc w-clearfix">
                                 <div className="red-line"></div>
                                 <h4 data-scroll-reveal="p" data-tab="p" className="h5">
-                                  The landscaping concept was designed to soften the architecture and strengthen the connection between the residences and the Mediterranean environment.
+                                  Bespoke furniture, finishes and elements created to complement the character of each space.
                                 </h4>
                               </div>
                             </div>
@@ -167,25 +173,25 @@ export function Amenities() {
                           <div role="list" className="amen-tabs-cms_list w-dyn-items">
                             <div role="listitem" className="amen-tabs-cms_list_item w-dyn-item">
                               <div data-tab="" data-tab-trigger="gated-community" className="amen-tab">
-                                <div data-scroll-reveal="p" className="h5">Gated community</div>
+                                <div data-scroll-reveal="p" className="h5">Interior Design</div>
                               </div>
                             </div>
                             <div role="listitem" className="amen-tabs-cms_list_item w-dyn-item">
                               <div data-tab="" data-tab-trigger="swimming-pool-2" className="amen-tab">
-                                <div data-scroll-reveal="p" className="h5">Swimming Pool</div>
+                                <div data-scroll-reveal="p" className="h5">Space Planning</div>
                               </div>
                             </div>
                             <div role="listitem" className="amen-tabs-cms_list_item w-dyn-item">
                               <div data-tab="" data-tab-trigger="swimming-pool" className="amen-tab">
-                                <div data-scroll-reveal="p" className="h5">Parking area</div>
+                                <div data-scroll-reveal="p" className="h5">Turnkey Interiors</div>
                               </div>
                             </div>
                             <div role="listitem" className="amen-tabs-cms_list_item w-dyn-item">
-                              <div data-tab="" data-tab-trigger="spa-gym" className="amen-tab"><div data-scroll-reveal="p" className="h5">Spa & gym</div></div>
+                              <div data-tab="" data-tab-trigger="spa-gym" className="amen-tab"><div data-scroll-reveal="p" className="h5">Renovation</div></div>
                             </div>
                             <div role="listitem" className="amen-tabs-cms_list_item w-dyn-item">
                               <div data-tab="" data-tab-trigger="landscaping" className="amen-tab">
-                                <div data-scroll-reveal="p" className="h5">Landscaping</div>
+                                <div data-scroll-reveal="p" className="h5">Custom Details</div>
                               </div>
                             </div>
                           </div>

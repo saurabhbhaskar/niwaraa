@@ -53,8 +53,8 @@ export function Pillars() {
                         <div className="benefit-slide_t">
                           <div className="u-48 b-desk"></div>
                           <div className="u-272 b-mob"></div>
-                          <h3 data-scroll-reveal="h" data-slider="h" className="h1 a-center b-desk">Real-Life Location</h3>
-                          <div data-scroll-reveal="h" data-slider="h" className="h2 a-center b-mob">Real-Life Location</div>
+                          <h3 data-scroll-reveal="h" data-slider="h" className="h1 a-center b-desk">Personal</h3>
+                          <div data-scroll-reveal="h" data-slider="h" className="h2 a-center b-mob">Personal</div>
                           <div className="u-48"></div>
                         </div>
                         <div className="benefit-slide_c">
@@ -71,14 +71,14 @@ export function Pillars() {
                           <div className="grid _8-columns">
                             <div className="benefit-slide_desc">
                               <p data-scroll-reveal="p" data-slider="p" className="p1 a-center">
-                                Nestled between pristine beaches, world-class golf courses and exclusive wellness clubs, Era Residence offers a rare balance of seclusion and seamless access to the finest Mediterranean lifestyle.
+                                Every space begins with the people who will experience it. We listen, understand and design around how you live, work and move through your space.
                               </p>
                             </div>
                           </div>
                           <div className="u-48"></div>
                           <div className="grid _8-columns">
                             <div className="benefit-slide_cap">
-                              <p data-scroll-reveal="p" data-slider="p" className="l1 a-center">Designed as a community, not a complex</p>
+                              <p data-scroll-reveal="p" data-slider="p" className="l1 a-center">Every project starts with you</p>
                             </div>
                           </div>
                           <div className="u-48"></div>
@@ -90,8 +90,8 @@ export function Pillars() {
                         <div className="benefit-slide_t">
                           <div className="u-48 b-desk"></div>
                           <div className="u-272 b-mob"></div>
-                          <h3 data-scroll-reveal="h" data-slider="h" className="h1 a-center b-desk">Built to stay</h3>
-                          <div data-scroll-reveal="h" data-slider="h" className="h2 a-center b-mob">Built to stay</div>
+                          <h3 data-scroll-reveal="h" data-slider="h" className="h1 a-center b-desk">Timeless</h3>
+                          <div data-scroll-reveal="h" data-slider="h" className="h2 a-center b-mob">Timeless</div>
                           <div className="u-48"></div>
                         </div>
                         <div className="benefit-slide_c">
@@ -108,14 +108,14 @@ export function Pillars() {
                           <div className="grid _8-columns">
                             <div className="benefit-slide_desc">
                               <p data-scroll-reveal="p" data-slider="p" className="p1 a-center">
-                                Drawing on the spirit of Marbella&#x27;s golden age, the design blends modern architecture with natural materials, lush landscaping and thoughtfully crafted spaces.
+                                We create beyond passing trends, focusing on design that continues to feel right — calm, natural and personal long after fashions fade.
                               </p>
                             </div>
                           </div>
                           <div className="u-48"></div>
                           <div className="grid _8-columns">
                             <div className="benefit-slide_cap">
-                              <p data-scroll-reveal="p" data-slider="p" className="l1 a-center">Designed as a community, not a complex</p>
+                              <p data-scroll-reveal="p" data-slider="p" className="l1 a-center">Beyond passing trends</p>
                             </div>
                           </div>
                           <div className="u-48"></div>
@@ -127,8 +127,8 @@ export function Pillars() {
                         <div className="benefit-slide_t">
                           <div className="u-48 b-desk"></div>
                           <div className="u-272 b-mob"></div>
-                          <h3 data-scroll-reveal="h" data-slider="h" className="h1 a-center b-desk">Boutique concept</h3>
-                          <div data-scroll-reveal="h" data-slider="h" className="h2 a-center b-mob">Boutique concept</div>
+                          <h3 data-scroll-reveal="h" data-slider="h" className="h1 a-center b-desk">Thoughtful</h3>
+                          <div data-scroll-reveal="h" data-slider="h" className="h2 a-center b-mob">Thoughtful</div>
                           <div className="u-48"></div>
                         </div>
                         <div className="benefit-slide_c">
@@ -145,14 +145,14 @@ export function Pillars() {
                           <div className="grid _8-columns">
                             <div className="benefit-slide_desc">
                               <p data-scroll-reveal="p" data-slider="p" className="p1 a-center">
-                                A boutique gated community of 25 residences on Costa del Sol, designed around privacy, wellbeing and timeless Mediterranean living.
+                                Every element has a purpose — from the overall layout to the smallest detail. We balance beauty, comfort and everyday living with intention.
                               </p>
                             </div>
                           </div>
                           <div className="u-48"></div>
                           <div className="grid _8-columns">
                             <div className="benefit-slide_cap">
-                              <p data-scroll-reveal="p" data-slider="p" className="l1 a-center">Designed as a community, not a complex</p>
+                              <p data-scroll-reveal="p" data-slider="p" className="l1 a-center">Beyond passing trends</p>
                             </div>
                           </div>
                           <div className="u-48"></div>

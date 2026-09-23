@@ -16,7 +16,7 @@ export function Developer() {
             <div className="u-48"></div>
             <div className="grid">
               <div className="s_title">
-                <p data-scroll-reveal="p" className="l1 a-center">A place to live — to return year after year</p>
+                <p data-scroll-reveal="p" className="l1 a-center">Why Niwaraa</p>
               </div>
             </div>
             <div className="u-48"></div>
@@ -30,7 +30,7 @@ export function Developer() {
                       <div data-accordion-card="" className="other-card">
                         <div className="other-card_name">
                           <div className="other-card_name_label">
-                            <h4 data-scroll-reveal="h" className="h3 a-center">Developer</h4>
+                            <h4 data-scroll-reveal="h" className="h3 a-center">Refined</h4>
                             <div data-scroll-reveal="ctn" data-ico-plus="" className="other-card_ico">
                               <div className="ico-16">
                                 <div className="ico w-embed">
@@ -46,7 +46,7 @@ export function Developer() {
                           <div className="u-32"></div>
                           <div className="grid _6-columns">
                             <div className="other-card_info_desc">
-                              <p data-accordion-card="p" className="p1 a-center">Swiss Technology S.L.</p>
+                              <p data-accordion-card="p" className="p1 a-center">We believe simplicity, proportion and restraint create lasting elegance.</p>
                               <div className="u-32"></div>
                               <div data-accordion-card="ctn" className="info_divider"><div className="line-h"></div></div>
                               <div className="u-48"></div>
@@ -59,7 +59,7 @@ export function Developer() {
                       <div data-accordion-card="" className="other-card">
                         <div className="other-card_name">
                           <div className="other-card_name_label">
-                            <h4 data-scroll-reveal="h" className="h3 a-center">Sales & Marketing</h4>
+                            <h4 data-scroll-reveal="h" className="h3 a-center">Crafted</h4>
                             <div data-scroll-reveal="ctn" data-ico-plus="" className="other-card_ico">
                               <div className="ico-16">
                                 <div className="ico w-embed">
@@ -75,11 +75,7 @@ export function Developer() {
                           <div className="u-32"></div>
                           <div className="grid _6-columns">
                             <div className="other-card_info_desc">
-                              <div data-accordion-card="ctn" className="other-card_info_logo">
-                                <img src="/images/Unreal logo.svg" loading="eager" alt="" className="logo b" />
-                              </div>
-                              <div className="u-32"></div>
-                              <p data-accordion-card="p" className="p1 a-center">Unreal Estate Group</p>
+                              <p data-accordion-card="p" className="p1 a-center">Good design deserves careful execution and attention to detail.</p>
                               <div className="u-32"></div>
                               <div data-accordion-card="ctn" className="info_divider"><div className="line-h"></div></div>
                               <div className="u-48"></div>
@@ -92,7 +88,7 @@ export function Developer() {
                       <div data-accordion-card="" className="other-card">
                         <div className="other-card_name">
                           <div className="other-card_name_label">
-                            <h4 data-scroll-reveal="h" className="h3 a-center">License obtained</h4>
+                            <h4 data-scroll-reveal="h" className="h3 a-center">Our Promise</h4>
                             <div data-scroll-reveal="ctn" data-ico-plus="" className="other-card_ico">
                               <div className="ico-16">
                                 <div className="ico w-embed">
@@ -109,7 +105,7 @@ export function Developer() {
                           <div className="grid _6-columns">
                             <div className="other-card_info_desc">
                               <p data-accordion-card="p" className="p1 a-center">
-                                The project holds all required permits and an active construction license. All documentation is publicly available. Construction is already underway — visit the site in person or follow progress via our live online stream.
+                                Thoughtful interiors. Timeless spaces. Residential and commercial interior design across India.
                               </p>
                               <div className="u-32"></div>
                               <div data-accordion-card="ctn" className="info_divider"><div className="line-h"></div></div>
@@ -123,7 +119,7 @@ export function Developer() {
                       <div data-accordion-card="" className="other-card">
                         <div className="other-card_name">
                           <div className="other-card_name_label">
-                            <h4 data-scroll-reveal="h" className="h3 a-center">2026</h4>
+                            <h4 data-scroll-reveal="h" className="h3 a-center">Let&apos;s Create</h4>
                             <div data-scroll-reveal="ctn" data-ico-plus="" className="other-card_ico">
                               <div className="ico-16">
                                 <div className="ico w-embed">
@@ -140,7 +136,7 @@ export function Developer() {
                           <div className="grid _6-columns">
                             <div className="other-card_info_desc">
                               <p data-accordion-card="p" className="p1 a-center">
-                                Currently under construction. The first phase of construction is underway, with ongoing development of the apartments and communal areas. Potential buyers can anticipate a modern living space upon completion of the build.
+                                Have a space in mind? Tell us what you&apos;re imagining — we&apos;ll help turn it into something real.
                               </p>
                               <div className="u-32"></div>
                               <div data-accordion-card="ctn" className="info_divider"><div className="line-h"></div></div>

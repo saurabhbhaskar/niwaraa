@@ -17,7 +17,7 @@ export default function ContactPage() {
     <>
       <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
       <ContactMain />
-      <SeaViewsCta image={CTA_IMAGES.contact} />
+      <SeaViewsCta image={CTA_IMAGES.home} />
       <BookACall />
     </>
   );

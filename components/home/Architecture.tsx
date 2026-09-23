@@ -16,28 +16,37 @@ export function Architecture() {
             <div className="w_bg">
               <div className="arch-intro-s_bg_l"></div>
               <div className="arch-intro-s_bg_r"><div className="w-embed"></div></div>
-              <div className="flower arch-intro-l">
-                <video muted playsInline loop disablePictureInPicture webkit-playsinline="webkit-playsinline" poster="/images/bougainvillea-flowers_05.avif" className="video">
-                  <source src="/videos/bougainvillea-flowers_05.webm" type="video/webm" />
-                  <source src="/videos/bougainvillea-flowers_05.mov" type="video/mp4" />
-                </video>
-              </div>
-              <div className="flower arch-intro-r">
-                <video muted playsInline loop disablePictureInPicture webkit-playsinline="webkit-playsinline" poster="/images/bougainvillea-flowers_07.avif" className="video">
-                  <source src="/videos/bougainvillea-flowers_07.webm" type="video/webm" />
-                  <source src="/videos/bougainvillea-flowers_07.mov" type="video/mp4" />
-                </video>
-              </div>
             </div>
           </div>
           <div className="arch-w theme_on-color">
             <div className="arch-s">
               <div className="arch-s_t">
                 <div className="u-48"></div>
-                <h2 data-text="h" data-fit-text="" className="h1 a-center">Architecture</h2>
+                <h2 data-text="h" data-fit-text="" className="h1 a-center">Our approach</h2>
                 <div className="u-32"></div>
                 <div className="grid">
-                  <div className="arch-s_desc"><p data-text="p" className="l1 a-center"></p></div>
+                  <div className="arch-s_desc">
+                    <p data-text="p" className="l1 a-center b-desk"></p>
+                    <p className="l1 a-center b-mob">
+                      Thoughtful by design — from understanding your space and needs, through exploration and
+                      careful planning, to skilled execution and the finished experience.
+                    </p>
+                  </div>
+                </div>
+                <div className="arch-s_mobile-copy b-mob">
+                  <div className="u-32"></div>
+                  <div className="red-line"></div>
+                  <div className="u-24"></div>
+                  <p className="p1 a-center">
+                    Every project begins by understanding the space, the people and the way it needs to be lived in.
+                    We explore materials, textures and forms to discover the right visual language — then bring
+                    ideas to life through quality materials, skilled execution and considered detail.
+                  </p>
+                  <div className="u-32"></div>
+                  <p className="l1 a-center">Understand · Explore · Design</p>
+                  <div className="u-8"></div>
+                  <p className="l1 reg a-center">Craft · Experience</p>
+                  <div className="u-48"></div>
                 </div>
               </div>
               <div className="arch-s_b">
@@ -45,13 +54,13 @@ export function Architecture() {
                   <div className="arch-s_quote w-clearfix">
                     <div className="red-line"></div>
                     <h3 data-part="p" className="h5">
-                      The architecture of ERA Residences balances clean contemporary lines with Mediterranean warmth and texture
+                      Thoughtful by design — from understanding your space and needs, through exploration and careful planning, to skilled execution and the finished experience.
                     </h3>
                     <div className="u-64"></div>
                     <div className="grid _4-columns">
                       <div className="arch-s_author">
-                        <div data-part="p" className="l1">By Schiemann Weyers</div>
-                        <div data-part="p" className="l1 reg">Architects OCWA Architects</div>
+                        <div data-part="p" className="l1">Understand · Explore · Design</div>
+                        <div data-part="p" className="l1 reg">Craft · Experience</div>
                       </div>
                     </div>
                     <div className="u-160 b-desk"></div>
@@ -81,8 +90,13 @@ export function Architecture() {
               </div>
             </div>
             <div className="w_bg">
-              <div data-desk="off" data-parallax="w" className="img-w">
-                <img className="img" src="/images/img_cam_02.webp" alt="Modern terrace apartments with green plants, flowering vines, and outdoor seating on a sunny day." sizes="(max-width: 1920px) 100vw, 1920px" data-parallax="img" loading="eager" srcSet="/images/img_cam_02-p-500.png 500w, /images/img_cam_02-p-800.png 800w, /images/img_cam_02-p-1080.png 1080w, /images/img_cam_02.webp 1920w" />
+              <div data-desk="off" data-mob="off" data-parallax="w" className="img-w arch-approach-img-w">
+                <img
+                  className="img arch-approach-img"
+                  src="/images/services/pic6.png"
+                  alt="Niwaraa — our approach to interior design"
+                  loading="eager"
+                />
                 <div className="img-over-grad bot _100vh"></div>
                 <div className="img-over-grad bot _100vh"></div>
               </div>

@@ -9,6 +9,8 @@
 export interface CtaImage {
   src: string;
   srcSet: string;
+  /** Optional mobile-only background (≤991px). */
+  srcMobile?: string;
 }
 
 /** Construye el srcset con las variantes que exporta Webflow. */
@@ -25,10 +27,16 @@ function responsive(name: string): CtaImage {
   };
 }
 
+/** Landing — desktop pic1, mobile pic2. */
+const homeCta: CtaImage = {
+  src: '/images/services/pic1.png',
+  srcSet: '/images/services/pic1.png',
+  srcMobile: '/images/services/pic2.png',
+};
+
 export const CTA_IMAGES = {
-  home: responsive('img_cta_1920'),
+  home: homeCta,
   apartments: responsive('era-residence-garden-2'),
-  contact: responsive('img_cam_09'),
-  /** Las 25 fichas comparten la misma. */
-  apartment: responsive('era-residence-ground-floor-2'),
+  contact: homeCta,
+  apartment: homeCta,
 } satisfies Record<string, CtaImage>;

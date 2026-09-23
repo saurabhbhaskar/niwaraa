@@ -183,10 +183,13 @@ function locationTrack(): () => void {
      */
     let applied = 0;
     const applyHeight = () => {
-      const width = track.scrollWidth;
-      if (width === applied) return;
-      applied = width;
-      area.style.height = `${width}px`;
+      const distance = Math.max(0, track.scrollWidth - area.offsetWidth);
+      const screen = q<HTMLElement>('.loc-scroll-area_screen', area);
+      const viewport = screen?.offsetHeight ?? window.innerHeight;
+      const height = distance + viewport;
+      if (height === applied) return;
+      applied = height;
+      area.style.height = `${height}px`;
       ScrollTrigger.refresh();
     };
     applyHeight();
@@ -361,8 +364,6 @@ function architectureFlow(): () => void {
 
     const introBgL = q('.arch-intro-s_bg_l', introS);
     const introBgR = q('.arch-intro-s_bg_r', introS);
-    const flowerL = q('.flower.arch-intro-l', introS);
-    const flowerR = q('.flower.arch-intro-r', introS);
     const archBg = q('.img', archS);
     const title = q('[data-text="h"]', archS);
     const desc = q('[data-text="p"]', archS);
@@ -417,8 +418,6 @@ function architectureFlow(): () => void {
         '<',
       )
       .fromTo(introS, { scale: 1 }, { scale: 1.84, ease: 'InOut', duration: 0.4 })
-      .to(flowerL, { scale: 1.84, xPercent: -50, ease: 'InOut', duration: 0.4 }, '<')
-      .to(flowerR, { scale: 1.84, xPercent: 50, ease: 'InOut', duration: 0.4 }, '<')
       .fromTo(
         archS,
         { scale: 0.75, transformOrigin: 'center top' },

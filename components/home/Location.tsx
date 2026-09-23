@@ -85,11 +85,11 @@ export function Location() {
               <div className="loc-s_desc">
                 <div className="b-desk">
                   <div className="loc-s_desc_line"><div data-scroll-reveal="line" className="line-v"></div></div>
-                  <h3 data-scroll-reveal="p" className="l1">New Golden Mile, Estepona</h3>
+                  <h3 data-scroll-reveal="p" className="l1">Natural materials</h3>
                   <div className="u-32"></div>
-                  <h4 data-scroll-reveal="p" className="p1">Costa del Sol</h4>
+                  <h4 data-scroll-reveal="p" className="p1">Timeless character</h4>
                   <div className="u-32"></div>
-                  <h5 data-scroll-reveal="p" className="p1">Spain</h5>
+                  <h5 data-scroll-reveal="p" className="p1">India</h5>
                 </div>
                 <div className="b-mob">
                   <div className="l1-list">

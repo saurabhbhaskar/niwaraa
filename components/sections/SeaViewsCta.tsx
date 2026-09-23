@@ -19,7 +19,7 @@ export function SeaViewsCta({ image = CTA_IMAGES.home }: { image?: CtaImage }) {
             <div className="grid">
               <div className="cta-s_desc">
                 <p data-scroll-reveal="p" className="l1 a-center">
-                  A short conversation is enough to understand which apartment fits your use case — whether it is a family second home, a longer stay, or a place to return to year after year.
+                  Tell us what you&apos;re imagining. We&apos;ll help turn it into something real — thoughtful interiors shaped around the way you live and work.
                 </p>
               </div>
             </div>
@@ -27,23 +27,23 @@ export function SeaViewsCta({ image = CTA_IMAGES.home }: { image?: CtaImage }) {
             <div className="grid">
               <div className="cta-s_title">
                 <h2 data-scroll-reveal="h" className="h1 a-center">
-                  Perfect 
+                  Have a space
                   <br />
-                  sea views
+                  in mind?
                 </h2>
                 <div className="u-32"></div>
-                <h3 data-scroll-reveal="h" className="c1 a-center">From rooftop terraces</h3>
+                <h3 data-scroll-reveal="h" className="c1 a-center">Let&apos;s create together</h3>
                 <div className="u-160"></div>
                 <div data-scroll-reveal="ctn" className="cta-s_title_btn">
                   <div hover-btn-circle="" data-magnetic-btn="" hover-nav-item-trigger="" className="btn-circle">
                     <div data-magnetic-inner="" className="btn-circle_label">
-                      <a hover-nav-item="" aria-label="View available apartments" href="/apartments" className="nav-item w-inline-block">
+                      <a hover-nav-item="" aria-label="Get in touch" href="/contact" className="nav-item w-inline-block">
                         <div className="nav-item_label">
                           <div className="nav-item_label_text">
-                            <div hover="text" className="l1">View available apartments</div>
+                            <div hover="text" className="l1">Get in touch</div>
                           </div>
                           <div className="nav-item_label_text is-2">
-                            <div hover="text" className="l1">View available apartments</div>
+                            <div hover="text" className="l1">Get in touch</div>
                           </div>
                         </div>
                       </a>
@@ -55,7 +55,7 @@ export function SeaViewsCta({ image = CTA_IMAGES.home }: { image?: CtaImage }) {
                         <circle cx="104" cy="104" r="103.5" stroke="var(--_colors---base-1000--line)" strokeWidth="1" fill="none"></circle>
                       </svg>
                     </div>
-                    <a aria-label="View available apartments" href="/apartments" className="btn-circle_link w-inline-block"></a>
+                    <a aria-label="Get in touch" href="/contact" className="btn-circle_link w-inline-block"></a>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,29 @@ export function SeaViewsCta({ image = CTA_IMAGES.home }: { image?: CtaImage }) {
           </div>
           <div className="w_bg">
             <div data-parallax="w" className="img-w">
-              <img data-parallax="img" loading="eager" alt="" src={image.src} sizes="(max-width: 1920px) 100vw, 1920px" srcSet={image.srcSet} className="img-p" />
+              {image.srcMobile ? (
+                <picture>
+                  <source media="(max-width: 991px)" srcSet={image.srcMobile} />
+                  <img
+                    data-parallax="img"
+                    loading="eager"
+                    alt=""
+                    src={image.src}
+                    sizes="(max-width: 1920px) 100vw, 1920px"
+                    className="img-p"
+                  />
+                </picture>
+              ) : (
+                <img
+                  data-parallax="img"
+                  loading="eager"
+                  alt=""
+                  src={image.src}
+                  sizes="(max-width: 1920px) 100vw, 1920px"
+                  srcSet={image.srcSet}
+                  className="img-p"
+                />
+              )}
               <div className="img-over-grad from-top _4x"></div>
               <div className="img-over-grad"></div>
               <div className="img-over-grad"></div>
