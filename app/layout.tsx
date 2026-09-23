@@ -51,13 +51,8 @@ export const metadata: Metadata = {
     images: ['/images/open-graph.webp'],
   },
   icons: {
-    icon: [
-      { url: '/icons/favicon-32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/icons/favicon-48.png', sizes: '48x48', type: 'image/png' },
-      { url: '/icons/favicon-192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/icons/favicon-512.png', sizes: '512x512', type: 'image/png' },
-    ],
-    apple: [{ url: '/icons/apple-touch-icon.png', sizes: '180x180' }],
+    icon: [{ url: '/images/services/niwaraalogo.png', type: 'image/png' }],
+    apple: [{ url: '/images/services/niwaraalogo.png', type: 'image/png' }],
   },
 };
 
