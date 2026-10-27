@@ -21,9 +21,10 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Quien pide menos movimiento se queda con el scroll nativo.
+    // Native scroll on small screens — Lenis fights touch scrolling and layout.
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reduced) return;
+    const coarsePointer = window.matchMedia('(max-width: 991px)').matches;
+    if (reduced || coarsePointer) return;
 
     // Si no, el navegador restaura la posición ANTES de que Lenis exista.
     history.scrollRestoration = 'manual';

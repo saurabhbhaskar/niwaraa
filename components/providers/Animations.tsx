@@ -54,6 +54,11 @@ export function Animations() {
     if (preloaderStarted) return;
     preloaderStarted = true;
 
+    if (window.location.pathname === '/' || window.location.pathname === '/contact') {
+      gsap.set('[data-preloader], [data-master-preloader]', { display: 'none' });
+      return;
+    }
+
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       gsap.set('[data-preloader], [data-master-preloader]', { display: 'none' });
       return;
@@ -66,6 +71,11 @@ export function Animations() {
   useEffect(() => {
     // Quien pide menos movimiento no debe quedarse con la página en blanco:
     // se retira el velo antiflicker y se sale sin animar nada.
+    if (window.location.pathname === '/' || window.location.pathname === '/contact') {
+      gsap.set('[data-prevent-flicker], [data-scroll-reveal]', { visibility: 'visible' });
+      return;
+    }
+
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       gsap.set('[data-prevent-flicker], [data-scroll-reveal]', { visibility: 'visible' });
       return;

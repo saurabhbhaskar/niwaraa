@@ -536,15 +536,35 @@ body {
 :root,
 body {
   --_fonts---font-display:
-    var(--font-display),
-    "Bodoni MT", "Didot", "Times New Roman", serif;
+    var(--font-montserrat),
+    "Montserrat",
+    system-ui,
+    sans-serif;
 
   --_fonts---font-body:
-    var(--font-body),
-    "Helvetica Neue", Arial, sans-serif;
+    var(--font-montserrat),
+    "Montserrat",
+    system-ui,
+    sans-serif;
 
   --_fonts---font-accent:
     var(--font-accent),
-    "Snell Roundhand", "Apple Chancery", cursive;
+    "Snell Roundhand",
+    "Apple Chancery",
+    cursive;
+}
+
+body {
+  font-weight: 400;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.l1 {
+  font-weight: 500;
 }
 

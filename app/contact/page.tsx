@@ -1,24 +1,12 @@
 import type { Metadata } from 'next';
-import { CTA_IMAGES } from '@/data/cta-images';
-import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { ContactMain } from '@/components/pages/ContactMain';
-import { SeaViewsCta } from '@/components/sections/SeaViewsCta';
-import { BookACall } from '@/components/sections/BookACall';
+import { PremiumContactPage } from '@/components/premium/PremiumContactPage';
 
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Get in touch with the ERA Residence sales office in Estepona for availability, ' +
-    'floor plans and private viewings.',
+    'Get in touch with Niwaraa in Pune — book a free consultation for residential, renovation or commercial interiors.',
 };
 
 export default function ContactPage() {
-  return (
-    <>
-      <Breadcrumbs trail={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
-      <ContactMain />
-      <SeaViewsCta image={CTA_IMAGES.home} />
-      <BookACall />
-    </>
-  );
+  return <PremiumContactPage />;
 }

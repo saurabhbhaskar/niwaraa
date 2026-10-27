@@ -10,7 +10,6 @@ import { FloatingTips } from '@/components/layout/FloatingTips';
 import { Preloader } from '@/components/layout/Preloader';
 import { MasterPreloader } from '@/components/layout/MasterPreloader';
 import { LandscapeCover } from '@/components/layout/LandscapeCover';
-import { CookieNotice } from '@/components/layout/CookieNotice';
 import { fontVariables } from './fonts';
 import '@/styles/globals.css';
 
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#f3f3ec',
+  themeColor: '#f3f0e8',
 };
 
 /*
@@ -85,7 +84,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <LandscapeCover />
           <MasterPreloader />
           <Preloader />
-          <CookieNotice />
           {/*
             `main.transition-container` es el contenedor que Barba sustituía
             en cada navegación. Aquí no se sustituye —el router de Next
