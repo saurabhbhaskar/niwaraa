@@ -1,7 +1,8 @@
-import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { CTA_IMAGES } from '@/data/cta-images';
 import { services, getServiceBySlug } from '@/data/services';
+import { buildPageMetadata } from '@/lib/metadata/buildPageMetadata';
+import { SITE_URL } from '@/lib/site';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { ServiceDetail } from '@/components/services/ServiceDetail';
 import { RelatedServices } from '@/components/services/RelatedServices';
@@ -17,15 +18,17 @@ export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
 }
 
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
+export async function generateMetadata({ params }: Params) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   if (!service) return {};
 
-  return {
+  return buildPageMetadata({
     title: service.seo.title,
     description: service.seo.description,
-  };
+    path: `/services/${slug}`,
+    image: service.heroImage,
+  });
 }
 
 export default async function ServicePage({ params }: Params) {
@@ -47,7 +50,10 @@ export default async function ServicePage({ params }: Params) {
           { label: service.title },
         ]}
       />
-      <ServiceDetail service={service} />
+      <ServiceDetail
+        service={service}
+        shareUrl={`${SITE_URL}/services/${service.slug}`}
+      />
       <RelatedServices items={related} />
       <SeaViewsCta image={CTA_IMAGES.apartment} />
       <BookACall />

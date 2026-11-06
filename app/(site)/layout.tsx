@@ -1,53 +1,36 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
-import { SmoothScroll } from '@/components/providers/SmoothScroll';
-import { Animations } from '@/components/providers/Animations';
-import { PageTransitions } from '@/components/providers/PageTransitions';
-import { Header } from '@/components/layout/Header';
-import { MenuModal } from '@/components/layout/MenuModal';
-import { BookCallModal } from '@/components/layout/BookCallModal';
-import { FloatingTips } from '@/components/layout/FloatingTips';
-import { Preloader } from '@/components/layout/Preloader';
-import { MasterPreloader } from '@/components/layout/MasterPreloader';
-import { LandscapeCover } from '@/components/layout/LandscapeCover';
+import { RootShell } from '@/components/layout/RootShell';
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_TAGLINE, SITE_URL } from '@/lib/site';
 import { fontVariables } from './fonts';
 import '@/styles/globals.css';
-
-/**
- * Dominio público del sitio. Al pasar a producción con el dominio del
- * cliente, cambiar aquí: alimenta las URLs absolutas de Open Graph.
- */
-const SITE_URL = 'https://www.niwaraa.com';
 
 /** Contenedor de Google Tag Manager del sitio original. */
 const GTM_ID = 'GTM-WMDRV3P6';
 
-const TITLE = 'Niwaraa — Thoughtful Interior Design Studio in India';
-const DESCRIPTION =
-  'Spaces, made personal. Niwaraa is an interior design studio creating refined, ' +
-  'functional and timeless residential and commercial interiors across India.';
+const TITLE = `${SITE_NAME} — Thoughtful Interior Design Studio in India`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: TITLE,
-    template: '%s — Niwaraa',
+    template: `%s — ${SITE_NAME}`,
   },
-  description: DESCRIPTION,
+  description: SITE_TAGLINE,
   openGraph: {
     type: 'website',
     title: TITLE,
-    description: DESCRIPTION,
+    description: SITE_TAGLINE,
     url: SITE_URL,
-    siteName: 'Niwaraa',
-    images: [{ url: '/images/open-graph.webp', width: 1200, height: 630 }],
+    siteName: SITE_NAME,
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
     videos: [{ url: '/videos/open-graph.mp4', type: 'video/mp4', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
-    description: DESCRIPTION,
-    images: ['/images/open-graph.webp'],
+    description: SITE_TAGLINE,
+    images: [DEFAULT_OG_IMAGE],
   },
   icons: {
     icon: [{ url: '/images/services/niwaraalogo.png', type: 'image/png' }],
@@ -58,7 +41,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#f3f0e8',
+  themeColor: '#f3f3ec',
 };
 
 /*
@@ -76,31 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           data-barba="wrapper". Barba sobra —el router de Next hace las
           transiciones—, pero la clase la usa el CSS heredado, así que se queda.
         */}
-        <div className="transition-wrapper">
-          {/*
-            El orden es el del original: las cortinas van ANTES que nada,
-            porque el master-preloader tapa la página hasta que arranca el JS.
-          */}
-          <LandscapeCover />
-          <MasterPreloader />
-          <Preloader />
-          {/*
-            `main.transition-container` es el contenedor que Barba sustituía
-            en cada navegación. Aquí no se sustituye —el router de Next
-            conserva el layout— pero sigue siendo el elemento que se funde en
-            las transiciones de ruta, y la cabecera va DENTRO, como en el
-            original.
-          */}
-          <main className="transition-container">
-            <Header />
-            <SmoothScroll>{children}</SmoothScroll>
-          </main>
-          <Animations />
-          <PageTransitions />
-          <BookCallModal />
-          <MenuModal />
-          <FloatingTips />
-        </div>
+        <RootShell>{children}</RootShell>
 
         {/* GTM: `afterInteractive` lo saca de la ruta crítica de render. */}
         <Script id="gtm" strategy="afterInteractive">

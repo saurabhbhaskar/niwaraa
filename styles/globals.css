@@ -15,8 +15,6 @@
 @import "./tokens.css";
 @import "./components.css";
 @import "./theme.css";
-@import "./premium-home.css";
-@import "./responsive-site.css";
 
 /* --- Ajustes propios del port a Next.js --- */
 
