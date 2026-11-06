@@ -1,8 +1,11 @@
+import type { ReactNode } from 'react';
+
 /**
  * LinkedIn, Facebook, Instagram — display only (no outbound links).
+ * `extra` renders additional `.social-btn` items at the end of the strip (e.g. WhatsApp).
  */
 
-export function SocialMediaIcons({ className }: { className?: string }) {
+export function SocialMediaIcons({ className, extra }: { className?: string; extra?: ReactNode }) {
   return (
     <div className={className}>
       <div className="social-cms w-dyn-list">
@@ -58,6 +61,11 @@ export function SocialMediaIcons({ className }: { className?: string }) {
               </div>
             </span>
           </div>
+          {extra ? (
+            <div role="listitem" className="social-cms_list_item w-dyn-item">
+              {extra}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

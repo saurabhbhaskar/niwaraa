@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
 import type { Service } from '@/data/services';
+import { ShareOnWhatsApp } from '@/components/share/ShareOnWhatsApp';
 
-export function ServiceDetail({ service }: { service: Service }) {
+export function ServiceDetail({ service, shareUrl }: { service: Service; shareUrl: string }) {
   return (
     <section data-bg="light" className="section clip">
       <div className="container">
@@ -87,6 +88,12 @@ export function ServiceDetail({ service }: { service: Service }) {
                         </div>
                         <div className="btn_bg"><div hover="bg" className="btn_bg_fill"></div></div>
                       </a>
+                      <ShareOnWhatsApp
+                        title={service.title}
+                        description={service.description}
+                        url={shareUrl}
+                        label="Share on WhatsApp"
+                      />
                     </div>
                     <div className="u-48"></div>
                   </div>

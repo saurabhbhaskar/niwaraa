@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+
+import { CircleButton } from '@/components/ui/CircleButton';
 /**
  * GENERADO por scripts/generate-sections.mjs desde home.html — no editar a mano.
  *
@@ -205,24 +207,7 @@ export function Amenities() {
                   <div className="amm-s_cms_btn-w b-desk">
                     <div className="grid">
                       <div data-scroll-reveal="ctn" className="amm-s_cms_btn">
-                        <div data-modal-cta-btn="book-a-call" data-magnetic-btn="" hover-nav-item-trigger="" hover-btn-circle="" className="btn-circle">
-                          <div data-magnetic-inner="" className="btn-circle_label">
-                            <a hover-nav-item="" aria-label="Book a call now" href="#" className="nav-item w-inline-block">
-                              <div className="nav-item_label">
-                                <div className="nav-item_label_text"><div hover="text" className="l1">Book a call now</div></div>
-                                <div className="nav-item_label_text is-2"><div hover="text" className="l1">Book a call now</div></div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className="btn-circle_bg w-embed">
-                            <svg data-circle="" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                              <circle data-arc="" cx="104" cy="104" r="103.5" stroke="currentColor" strokeWidth="1" fill="none" transform="rotate(-150 104 104)"></circle>
-                              <circle data-arc="" cx="104" cy="104" r="103.5" stroke="currentColor" strokeWidth="1" fill="none" transform="rotate(30 104 104)"></circle>
-                              <circle cx="104" cy="104" r="103.5" stroke="var(--_colors---base-1000--line)" strokeWidth="1" fill="none"></circle>
-                            </svg>
-                          </div>
-                          <a aria-label="Book a call now" href="#" className="btn-circle_link w-inline-block"></a>
-                        </div>
+                        <CircleButton label="Book a call now" modal="book-a-call" />
                       </div>
                     </div>
                   </div>

@@ -8,6 +8,7 @@
  */
 
 import { CTA_IMAGES, type CtaImage } from '@/data/cta-images';
+import { CircleButton } from '@/components/ui/CircleButton';
 
 export function SeaViewsCta({ image = CTA_IMAGES.home }: { image?: CtaImage }) {
   return (
@@ -35,28 +36,7 @@ export function SeaViewsCta({ image = CTA_IMAGES.home }: { image?: CtaImage }) {
                 <h3 data-scroll-reveal="h" className="c1 a-center">Let&apos;s create together</h3>
                 <div className="u-160"></div>
                 <div data-scroll-reveal="ctn" className="cta-s_title_btn">
-                  <div hover-btn-circle="" data-magnetic-btn="" hover-nav-item-trigger="" className="btn-circle">
-                    <div data-magnetic-inner="" className="btn-circle_label">
-                      <a hover-nav-item="" aria-label="Get in touch" href="/contact" className="nav-item w-inline-block">
-                        <div className="nav-item_label">
-                          <div className="nav-item_label_text">
-                            <div hover="text" className="l1">Get in touch</div>
-                          </div>
-                          <div className="nav-item_label_text is-2">
-                            <div hover="text" className="l1">Get in touch</div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div className="btn-circle_bg w-embed">
-                      <svg data-circle="" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                        <circle data-arc="" cx="104" cy="104" r="103.5" stroke="currentColor" strokeWidth="1" fill="none" transform="rotate(-150 104 104)"></circle>
-                        <circle data-arc="" cx="104" cy="104" r="103.5" stroke="currentColor" strokeWidth="1" fill="none" transform="rotate(30 104 104)"></circle>
-                        <circle cx="104" cy="104" r="103.5" stroke="var(--_colors---base-1000--line)" strokeWidth="1" fill="none"></circle>
-                      </svg>
-                    </div>
-                    <a aria-label="Get in touch" href="/contact" className="btn-circle_link w-inline-block"></a>
-                  </div>
+                  <CircleButton label="Get in touch" href="/contact" />
                 </div>
               </div>
             </div>

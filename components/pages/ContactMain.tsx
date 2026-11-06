@@ -1,5 +1,8 @@
 import { NiwaraaLogo } from '@/components/brand/NiwaraaLogo';
 import { SocialMediaIcons } from '@/components/brand/SocialMediaIcons';
+import { CircleButton } from '@/components/ui/CircleButton';
+import { ShareOnWhatsApp } from '@/components/share/ShareOnWhatsApp';
+import { SITE_TAGLINE, SITE_URL } from '@/lib/site';
 /* eslint-disable @next/next/no-img-element */
 /**
  * GENERADO por scripts/generate-sections.mjs desde contact.html — no editar a mano.
@@ -95,10 +98,14 @@ export function ContactMain() {
               </div>
               <div className="u-160"></div>
               <div className="grid">
-                <div data-prevent-flicker="" data-scroll-reveal="ctn" className="contact-s_social">
-                  <SocialMediaIcons />
-                </div>
-                <div data-parallax="w" data-scroll-reveal="ctn" data-prevent-flicker="" className="contact-s_map">
+                <div
+                  data-parallax="w"
+                  data-mob="off"
+                  data-desk="off"
+                  data-scroll-reveal="ctn"
+                  data-prevent-flicker=""
+                  className="contact-s_map"
+                >
                   <div data-parallax="img" className="contact-s_map_c">
                     <img src="/images/map.png" loading="eager" alt="Niwaraa studio location map" className="img h-auto" />
                     <div className="contact-s_map_pin">
@@ -116,25 +123,21 @@ export function ContactMain() {
                     </div>
                   </div>
                 </div>
+                <div data-prevent-flicker="" data-scroll-reveal="ctn" className="contact-s_social">
+                  <SocialMediaIcons
+                    extra={
+                      <ShareOnWhatsApp
+                        title="Contact Niwaraa"
+                        description={SITE_TAGLINE}
+                        url={`${SITE_URL}/contact`}
+                        label="WhatsApp Niwaraa"
+                        variant="icon"
+                      />
+                    }
+                  />
+                </div>
                 <div data-prevent-flicker="" data-scroll-reveal="ctn" className="contact-s_btn">
-                  <div data-modal-cta-btn="book-a-call" data-magnetic-btn="" hover-nav-item-trigger="" hover-btn-circle="" className="btn-circle">
-                    <div data-magnetic-inner="" className="btn-circle_label">
-                      <a hover-nav-item="" aria-label="Book a call now" href="#" className="nav-item w-inline-block">
-                        <div className="nav-item_label">
-                          <div className="nav-item_label_text"><div hover="text" className="l1">Book a call now</div></div>
-                          <div className="nav-item_label_text is-2"><div hover="text" className="l1">Book a call now</div></div>
-                        </div>
-                      </a>
-                    </div>
-                    <div className="btn-circle_bg w-embed">
-                      <svg data-circle="" viewBox="0 0 208 208" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                        <circle data-arc="" cx="104" cy="104" r="103.5" stroke="currentColor" strokeWidth="1" fill="none" transform="rotate(-150 104 104)"></circle>
-                        <circle data-arc="" cx="104" cy="104" r="103.5" stroke="currentColor" strokeWidth="1" fill="none" transform="rotate(30 104 104)"></circle>
-                        <circle cx="104" cy="104" r="103.5" stroke="var(--_colors---base-1000--line)" strokeWidth="1" fill="none"></circle>
-                      </svg>
-                    </div>
-                    <a aria-label="Book a call now" href="#" className="btn-circle_link w-inline-block"></a>
-                  </div>
+                  <CircleButton label="Book a call now" modal="book-a-call" />
                 </div>
               </div>
               <div className="u-272 b-mob"></div>

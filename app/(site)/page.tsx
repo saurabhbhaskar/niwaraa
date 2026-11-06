@@ -1,4 +1,12 @@
+import { buildPageMetadata } from '@/lib/metadata/buildPageMetadata';
+import { SITE_TAGLINE } from '@/lib/site';
 import { ScrollRail } from '@/components/layout/ScrollRail';
+
+export const metadata = buildPageMetadata({
+  title: 'Thoughtful Interior Design Studio in India',
+  description: SITE_TAGLINE,
+  path: '/',
+});
 import { Hero } from '@/components/home/Hero';
 import { Arch } from '@/components/home/Arch';
 import { PillarsMedia } from '@/components/home/PillarsMedia';
