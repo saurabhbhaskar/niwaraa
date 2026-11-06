@@ -415,67 +415,25 @@ body {
   }
 }
 
-/* Niwaraa brand logo (replaces ERA SVG symbol site-wide) */
+/* Niwaraa brand logo — inline SVG (components/brand/NiwaraaLogo.tsx).
+ * Uses currentColor, and `.logo` already takes the section ink colour,
+ * so it is Deep Ink on light sections and white on dark / photo sections. */
 .logo.w-embed .niwaraa-logo {
   width: 100%;
   height: 100%;
-  object-fit: contain;
   display: block;
-}
-
-.logo.w-embed .niwaraa-logo--white {
-  display: none;
-}
-
-.theme_on-dark .logo.w-embed .niwaraa-logo--default,
-.theme_on-color .logo.w-embed .niwaraa-logo--default {
-  display: none;
-}
-
-.theme_on-dark .logo.w-embed .niwaraa-logo--white,
-.theme_on-color .logo.w-embed .niwaraa-logo--white {
-  display: block;
-}
-
-/* Header corner: logo follows the same scroll theme as the ring text */
-.header-logo.theme_on-light .logo.w-embed .niwaraa-logo--default {
-  display: block;
-}
-
-.header-logo.theme_on-light .logo.w-embed .niwaraa-logo--white {
-  display: none;
-}
-
-.header-logo.theme_on-dark .logo.w-embed .niwaraa-logo--default,
-.header-logo.theme_on-color .logo.w-embed .niwaraa-logo--default {
-  display: none;
-}
-
-.header-logo.theme_on-dark .logo.w-embed .niwaraa-logo--white,
-.header-logo.theme_on-color .logo.w-embed .niwaraa-logo--white {
-  display: block;
+  overflow: visible;
 }
 
 /* Slightly larger mark in the fixed header corner only */
 .header-logo .logo_symbol.header {
-  width: calc(var(--_units---u-48) * 1.18);
-  height: calc(var(--_units---u-48) * 1.18);
-}
-
-/* White asset has more padding — scale to match the colored mark */
-.header-logo .logo.w-embed .niwaraa-logo--white {
-  transform: scale(1.72);
-  transform-origin: center center;
+  width: calc(var(--_units---u-48) * 1.4);
+  height: calc(var(--_units---u-48) * 1.4);
 }
 
 .footer-s_contact .logo_symbol.ico-64 {
   width: calc(var(--_units---u-64) * 1.28);
   height: calc(var(--_units---u-64) * 1.28);
-}
-
-.footer-s_contact .logo.w-embed .niwaraa-logo--white {
-  transform: scale(1.72);
-  transform-origin: center center;
 }
 
 .footer-s_contact .footer-s_email .l1 {
