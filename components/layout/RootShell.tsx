@@ -11,6 +11,7 @@ import { Preloader } from '@/components/layout/Preloader';
 import { MasterPreloader } from '@/components/layout/MasterPreloader';
 import { LandscapeCover } from '@/components/layout/LandscapeCover';
 import { CookieNotice } from '@/components/layout/CookieNotice';
+import { WhatsAppFloat } from '@/components/share/WhatsAppFloat';
 
 export function RootShell({ children }: { children: React.ReactNode }) {
   return (
@@ -28,6 +29,7 @@ export function RootShell({ children }: { children: React.ReactNode }) {
       <BookCallModal />
       <MenuModal />
       <FloatingTips />
+      <WhatsAppFloat />
     </div>
   );
 }

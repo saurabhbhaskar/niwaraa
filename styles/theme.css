@@ -79,7 +79,7 @@ html {
   font-size: calc(var(--_fonts---h1--size) * 0.84);
 }
 
-/* Faint velvet-plum tint — same role as powder-sky, but in the hero purple family */
+/* Faint terracotta tint — soft warm background for brand sections */
 .modal.menu .modal_menu_title .h1 {
   white-space: nowrap;
 }
@@ -114,10 +114,10 @@ html {
 
 :root,
 body {
-  --_global-colors---brand-500--velvet-plum-tint: color-mix(
+  --_global-colors---brand-500--terracotta-tint: color-mix(
     in srgb,
-    var(--_global-colors---brand-500--velvet-plum) 12%,
-    #fff
+    var(--_global-colors---brand-500--terracotta) 9%,
+    var(--_global-colors---base-0--100)
   );
 }
 
@@ -125,16 +125,16 @@ body {
 .related-services.theme_on-brand,
 .section.theme_on-brand:has(.contact-w),
 .modal_cta.theme_on-brand {
-  --_colors---other--bg: var(--_global-colors---brand-500--velvet-plum-tint);
+  --_colors---other--bg: var(--_global-colors---brand-500--terracotta-tint);
 }
 
 .section:has(.arch-scroll-area) {
-  --_colors---other--bg: var(--_global-colors---brand-500--velvet-plum-tint);
+  --_colors---other--bg: var(--_global-colors---brand-500--terracotta-tint);
 }
 
 .arch-scroll-area .arch-intro-s_bg_l,
 .arch-scroll-area .arch-intro-s_bg_r {
-  background-color: var(--_global-colors---brand-500--velvet-plum-tint);
+  background-color: var(--_global-colors---brand-500--terracotta-tint);
 }
 
 @media (max-width: 991px) {
@@ -532,7 +532,9 @@ button.btn {
   font: inherit;
   color: inherit;
   text-align: inherit;
-  padding: 0;
+  /* Keep the pill padding from .btn (a bare `padding: 0` here squashed the Submit button) */
+  padding: var(--_units---u-12) var(--24px);
+  min-width: 7.5em;
 }
 
 button.btn:disabled {
@@ -544,7 +546,9 @@ button.btn:disabled {
  * Contact: social strip (left) + circle CTA (right) sit over the full-bleed map,
  * as in the original Webflow layout. WhatsApp is an extra icon in the strip.
  */
-.contact-s_social .social-btn.is-link {
+.social-btn.is-link,
+.contact-s_social .social-btn.is-link,
+.footer-s_social .social-btn.is-link {
   cursor: pointer;
   color: inherit;
   text-decoration: none;
@@ -777,4 +781,113 @@ button.btn:disabled {
   .btn-circle.is-cta .btn-circle_label {
     transition-duration: 0.01s;
   }
+}
+
+
+/* ==================================================================
+ * Floating WhatsApp button (components/share/WhatsAppFloat.tsx)
+ * Terracotta disc, ivory glyph, soft pulse; label slides out on hover.
+ * Sits under the cookie card (z 99) and the modals, above the page.
+ * ================================================================== */
+.wa-float {
+  /* px, not rem: the site scales rem with viewport width, which shrinks this on phones */
+  --wa-size: 56px;
+  position: fixed;
+  right: max(20px, env(safe-area-inset-right, 0px));
+  bottom: max(20px, env(safe-area-inset-bottom, 0px));
+  z-index: 98;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: var(--wa-size);
+  min-width: var(--wa-size);
+  border-radius: calc(var(--wa-size) / 2);
+  background: var(--_global-colors---brand-500--terracotta);
+  color: var(--_global-colors---base-0--100);
+  text-decoration: none;
+  /* Ivory hairline keeps it visible on terracotta sections (footer, brand blocks) */
+  box-shadow: 0 0 0 1.5px rgb(243 243 236 / 0.55), 0 12px 32px -12px rgb(0 0 0 / 0.45);
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1), background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.wa-float_ico {
+  flex: 0 0 var(--wa-size);
+  width: var(--wa-size);
+  height: var(--wa-size);
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.wa-float_label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--_fonts---font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: max-width 0.5s cubic-bezier(0.65, 0, 0.35, 1), opacity 0.3s ease, padding 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.wa-float_pulse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: var(--wa-size);
+  height: var(--wa-size);
+  border-radius: 50%;
+  border: 1px solid var(--_global-colors---brand-500--terracotta);
+  pointer-events: none;
+  animation: wa-pulse 3.2s cubic-bezier(0.65, 0, 0.35, 1) 2s infinite;
+}
+
+@keyframes wa-pulse {
+  0% { transform: scale(1); opacity: 0.6; }
+  70%, 100% { transform: scale(1.45); opacity: 0; }
+}
+
+@media (hover: hover) {
+  .wa-float:hover {
+    background: color-mix(in srgb, var(--_global-colors---brand-500--terracotta) 88%, #000);
+  }
+
+  .wa-float:hover .wa-float_label {
+    max-width: 160px;
+    opacity: 1;
+    padding-left: 20px;
+  }
+
+  .wa-float:hover .wa-float_pulse {
+    animation-play-state: paused;
+    opacity: 0;
+  }
+}
+
+.wa-float:active {
+  transform: scale(0.94);
+}
+
+.wa-float:focus-visible {
+  outline: 2px solid var(--_global-colors---brand-500--terracotta);
+  outline-offset: 4px;
+}
+
+/* Hide while the menu / booking modal is open */
+html[data-scroll-locked] .wa-float {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 991px) {
+  .wa-float {
+    --wa-size: 52px;
+    right: max(16px, env(safe-area-inset-right, 0px));
+    bottom: max(16px, env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float_pulse { animation: none; }
 }

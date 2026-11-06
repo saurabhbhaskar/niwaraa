@@ -12,7 +12,7 @@
 
 :root {
   /* global-colors */
-  --_global-colors---brand-500--velvet-plum: #340c24;
+  --_global-colors---brand-500--terracotta: #a35139; /* Terracotta — brand accent (was velvet plum #340c24) */
   --_global-colors---base-0--100: #f3f3ec;
   --_global-colors---base-0--0: #f3f3ec00;
   --_global-colors---brand-500--powder-sky: #b5cedb;
@@ -166,7 +166,7 @@
 .theme_on-color {
   /* colors */
   --_colors---base-1000--primary: var(--_global-colors---white--100);
-  --_colors---other--bg: var(--_global-colors---brand-500--velvet-plum);
+  --_colors---other--bg: var(--_global-colors---brand-500--terracotta);
   --_colors---base-0--primary: var(--_global-colors---base-1000--100);
   --_colors---base-1000--gray-text: var(--_global-colors---white--80);
   --_colors---additional--success: #1ba64b;
@@ -216,7 +216,7 @@
 .theme_on-dark {
   /* colors */
   --_colors---base-1000--primary: var(--_global-colors---base-0--100);
-  --_colors---other--bg: var(--_global-colors---brand-500--velvet-plum);
+  --_colors---other--bg: var(--_global-colors---brand-500--terracotta);
   --_colors---base-0--primary: var(--_global-colors---base-1000--100);
   --_colors---base-1000--gray-text: var(--_global-colors---base-0--60);
   --_colors---additional--success: #1ba64b;

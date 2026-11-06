@@ -1,5 +1,6 @@
 import { NiwaraaLogo } from '@/components/brand/NiwaraaLogo';
 import { SocialMediaIcons } from '@/components/brand/SocialMediaIcons';
+import { WhatsAppSocialLink } from '@/components/share/WhatsAppSocialLink';
 /* eslint-disable @next/next/no-img-element */
 /**
  * GENERADO por scripts/generate-shared-sections.mjs — no editar a mano.
@@ -105,7 +106,7 @@ export function BookACall({ showToTop = false }: { showToTop?: boolean }) {
                   </div>
                 </div>
                 <div data-text="ctn" className="footer-s_credits footer-s_social">
-                  <SocialMediaIcons />
+                  <SocialMediaIcons extra={<WhatsAppSocialLink />} />
                 </div>
               </div>
               <div className="u-48"></div>

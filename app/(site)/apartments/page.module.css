@@ -82,7 +82,7 @@
 }
 
 .card:hover .cardTitle {
-  color: var(--_global-colors---brand-500--velvet-plum);
+  color: var(--_global-colors---brand-500--terracotta);
 }
 
 @media screen and (max-width: 991px) {

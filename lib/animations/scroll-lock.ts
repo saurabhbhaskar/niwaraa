@@ -68,6 +68,8 @@ export function lockScroll() {
   locked = true;
   lockedY = window.scrollY;
   instance?.stop();
+  // Lets CSS react to an open modal (e.g. hide the floating WhatsApp button).
+  document.documentElement.setAttribute('data-scroll-locked', '');
 
   // `passive: false` es obligatorio: sin él el navegador ignora el
   // preventDefault en wheel y touchmove.
@@ -85,6 +87,7 @@ export function unlockScroll() {
   window.removeEventListener('keydown', blockKeys);
   window.removeEventListener('scroll', keepPosition);
   instance?.start();
+  document.documentElement.removeAttribute('data-scroll-locked');
 }
 
 /**

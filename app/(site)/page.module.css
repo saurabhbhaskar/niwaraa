@@ -12,7 +12,7 @@
   letter-spacing: var(--_fonts---l2--letter-spacing);
   text-transform: uppercase;
   color: var(--_colors---base-0--primary);
-  background: var(--_global-colors---brand-500--velvet-plum);
+  background: var(--_global-colors---brand-500--terracotta);
   padding: var(--_units---u-8) var(--_units---u-12);
   margin: 0 0 var(--_units---u-48);
 }
@@ -29,7 +29,7 @@
   font-family: var(--_fonts---font-accent);
   font-size: var(--_fonts---a2--size);
   line-height: var(--_fonts---a2--line-height);
-  color: var(--_global-colors---brand-500--velvet-plum);
+  color: var(--_global-colors---brand-500--terracotta);
   margin: 0 0 var(--_units---u-32);
 }
 

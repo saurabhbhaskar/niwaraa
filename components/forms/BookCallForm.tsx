@@ -236,7 +236,7 @@ export function BookCallForm() {
             </div>
             <div className="form_block_b">
               <div className="form_block_legal">
-                <div className="p2 inline">By submitting, you agree to our</div>
+                <div className="p2 inline">By submitting, you agree to our&nbsp;</div>
                 <div data-text="p" className="legal-cms inline w-dyn-list">
                   <div data-comma-list="" role="list" className="legal-cms_list inline w-dyn-items">
                     <div role="listitem" className="legal-cms_list_item inline w-dyn-item">

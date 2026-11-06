@@ -11,7 +11,7 @@ export function Developer() {
   return (
     <section data-bg="light" className="section clip">
       <div className="container">
-        <div data-video-playpause="" className="other-w">
+        <div className="other-w">
           <div className="other-s">
             <div className="u-48"></div>
             <div className="grid">
@@ -151,12 +151,6 @@ export function Developer() {
               </div>
             </div>
             <div className="u-160"></div>
-          </div>
-          <div data-parallax="ctn-down" className="flower other">
-            <video muted playsInline loop disablePictureInPicture webkit-playsinline="webkit-playsinline" poster="/images/bougainvillea-flowers_07.avif" className="video">
-              <source src="/videos/bougainvillea-flowers_07.webm" type="video/webm" />
-              <source src="/videos/bougainvillea-flowers_07.mov" type="video/mp4" />
-            </video>
           </div>
         </div>
       </div>
