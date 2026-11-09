@@ -37,17 +37,33 @@ export function Architecture() {
                 </div>
                 <div className="arch-s_mobile-copy b-mob">
                   <div className="u-32"></div>
-                  <div className="red-line"></div>
-                  <div className="u-24"></div>
-                  <p className="p1 a-center">
+                  <p className="p1 a-center arch-m_body">
                     Every project begins by understanding the space, the people and the way it needs to be lived in.
                     We explore materials, textures and forms to discover the right visual language — then bring
                     ideas to life through quality materials, skilled execution and considered detail.
                   </p>
                   <div className="u-32"></div>
-                  <p className="l1 a-center">Understand · Explore · Design</p>
-                  <div className="u-8"></div>
-                  <p className="l1 reg a-center">Craft · Experience</p>
+                  <div className="arch-m_photo">
+                    <img
+                      src="/images/services/pic6.png"
+                      alt="Niwaraa — our approach to interior design"
+                      loading="lazy"
+                      className="arch-m_photo_img"
+                    />
+                  </div>
+                  <div className="u-32"></div>
+                  <ol className="arch-m_steps" aria-label="Our process">
+                    {['Understand', 'Explore', 'Design', 'Craft', 'Experience'].map((step, i) => (
+                      <li key={step} className="arch-m_step">
+                        <span className="l1 reg arch-m_step_n">{String(i + 1).padStart(2, '0')}</span>
+                        <span className="h5 arch-m_step_t">{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                  <div className="u-48"></div>
+                  <div className="arch-m_btn">
+                    <CircleButton label="Book a call now" modal="book-a-call" />
+                  </div>
                   <div className="u-48"></div>
                 </div>
               </div>

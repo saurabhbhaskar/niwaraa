@@ -138,10 +138,45 @@ body {
 }
 
 @media (max-width: 991px) {
+  /*
+   * "Our approach" on mobile: a single readable column on terracotta —
+   * title → intro → body → photo card → numbered process → CTA.
+   * The desktop quote and the full-bleed background photo are hidden here
+   * (they repeated the same copy and left a grey band under the text).
+   */
+  /* This section starts inside the pinned Amenities scroll area (like the Arch
+   * section before it); lift it above that sticky screen so the text isn't covered. */
+  .section:has(.arch-scroll-area) {
+    position: relative;
+    z-index: 1;
+  }
+
   .arch-scroll-area .arch-s {
     aspect-ratio: auto;
     min-height: auto;
-    padding-bottom: var(--_units---u-32);
+    padding-bottom: 0;
+  }
+
+  .arch-scroll-area .arch-s_b,
+  .arch-scroll-area .arch-w > .w_bg,
+  .arch-scroll-area .arch_themes {
+    display: none;
+  }
+
+  /* Full-bleed terracotta behind the column without changing its width
+   * (the section is overflow-clipped, so the layer stops at the screen edge). */
+  .arch-scroll-area .arch-w {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .arch-scroll-area .arch-w::before {
+    content: '';
+    position: absolute;
+    inset: 0 -100vw;
+    z-index: -1;
+    background-color: var(--_colors---other--bg);
+    pointer-events: none;
   }
 
   .arch-scroll-area .arch-s_desc,
@@ -151,28 +186,76 @@ body {
     pointer-events: auto;
   }
 
-  .arch-scroll-area .arch-s_mobile-copy .p1,
-  .arch-scroll-area .arch-s_mobile-copy .l1 {
-    color: var(--_colors---base-0--primary);
+  .arch-scroll-area .arch-s_desc .l1 {
+    color: var(--_colors---base-1000--primary);
+    line-height: 1.6;
+    max-width: 32em;
+    margin-inline: auto;
   }
 
-  .arch-scroll-area .arch_themes {
-    display: none;
+  .arch-scroll-area .arch-m_body {
+    color: color-mix(in srgb, var(--_colors---base-1000--primary) 88%, transparent);
+    font-size: max(var(--_fonts---p1--size), 15px);
+    line-height: 1.6;
+    max-width: 30em;
+    margin-inline: auto;
   }
 
-  .arch-scroll-area .arch-w > .w_bg .arch-approach-img-w {
-    overflow: hidden;
+  .arch-scroll-area .arch-m_photo {
+    position: relative;
     aspect-ratio: 4 / 5;
-    max-height: min(72vh, 640px);
     width: 100%;
+    overflow: hidden;
+    border-radius: var(--_units---u-4);
+    outline: 1px solid color-mix(in srgb, var(--_colors---base-1000--primary) 30%, transparent);
+    outline-offset: 6px;
   }
 
-  .arch-scroll-area .arch-w > .w_bg .arch-approach-img {
+  .arch-scroll-area .arch-m_photo_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
-    transform: none !important;
+    object-position: center;
+    display: block;
+  }
+
+  .arch-scroll-area .arch-m_steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid color-mix(in srgb, var(--_colors---base-1000--primary) 30%, transparent);
+  }
+
+  .arch-scroll-area .arch-m_step {
+    display: flex;
+    align-items: baseline;
+    gap: var(--_units---u-24);
+    padding-block: 14px;
+    border-bottom: 1px solid color-mix(in srgb, var(--_colors---base-1000--primary) 30%, transparent);
+    color: var(--_colors---base-1000--primary);
+  }
+
+  .arch-scroll-area .arch-m_step_n {
+    flex: 0 0 2.5em;
+    opacity: 0.7;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .arch-scroll-area .arch-m_step_t {
+    font-size: max(var(--_fonts---h5--size), 22px);
+    line-height: 1.1;
+  }
+
+  .arch-scroll-area .arch-m_btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Solid Deep Ink disc: the translucent one turned muddy brown over terracotta */
+  .arch-scroll-area .arch-m_btn .btn-circle.is-cta .btn-circle_disc {
+    background: var(--_global-colors---base-1000--100);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 }
 
@@ -786,12 +869,13 @@ button.btn:disabled {
 
 /* ==================================================================
  * Floating WhatsApp button (components/share/WhatsAppFloat.tsx)
- * Terracotta disc, ivory glyph, soft pulse; label slides out on hover.
+ * WhatsApp-green disc, white glyph, soft pulse; label slides out on hover.
  * Sits under the cookie card (z 99) and the modals, above the page.
  * ================================================================== */
 .wa-float {
   /* px, not rem: the site scales rem with viewport width, which shrinks this on phones */
   --wa-size: 56px;
+  --wa-green: #25d366; /* official WhatsApp green */
   position: fixed;
   right: max(20px, env(safe-area-inset-right, 0px));
   bottom: max(20px, env(safe-area-inset-bottom, 0px));
@@ -802,8 +886,8 @@ button.btn:disabled {
   height: var(--wa-size);
   min-width: var(--wa-size);
   border-radius: calc(var(--wa-size) / 2);
-  background: var(--_global-colors---brand-500--terracotta);
-  color: var(--_global-colors---base-0--100);
+  background: var(--wa-green);
+  color: #fff;
   text-decoration: none;
   /* Ivory hairline keeps it visible on terracotta sections (footer, brand blocks) */
   box-shadow: 0 0 0 1.5px rgb(243 243 236 / 0.55), 0 12px 32px -12px rgb(0 0 0 / 0.45);
@@ -838,7 +922,7 @@ button.btn:disabled {
   width: var(--wa-size);
   height: var(--wa-size);
   border-radius: 50%;
-  border: 1px solid var(--_global-colors---brand-500--terracotta);
+  border: 1.5px solid var(--wa-green);
   pointer-events: none;
   animation: wa-pulse 3.2s cubic-bezier(0.65, 0, 0.35, 1) 2s infinite;
 }
@@ -850,7 +934,7 @@ button.btn:disabled {
 
 @media (hover: hover) {
   .wa-float:hover {
-    background: color-mix(in srgb, var(--_global-colors---brand-500--terracotta) 88%, #000);
+    background: #1ebe5a;
   }
 
   .wa-float:hover .wa-float_label {
@@ -870,7 +954,7 @@ button.btn:disabled {
 }
 
 .wa-float:focus-visible {
-  outline: 2px solid var(--_global-colors---brand-500--terracotta);
+  outline: 2px solid #1ebe5a;
   outline-offset: 4px;
 }
 
@@ -890,4 +974,77 @@ html[data-scroll-locked] .wa-float {
 
 @media (prefers-reduced-motion: reduce) {
   .wa-float_pulse { animation: none; }
+}
+
+
+/* Brand name: never break NIWARAA across lines (Safari draws the display face
+ * slightly wider, and the split-letter reveal let the last "A" drop on phones). */
+.hero-s_logo .h1,
+.preloader_logo .h3 {
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .hero-s_logo .h1 {
+    font-size: min(var(--_fonts---h1--size), 21vw);
+  }
+}
+
+/* ==================================================================
+ * Projects (components/projects/*)
+ * ================================================================== */
+/* Fixed photo box so every card in the strip lines up, whatever the photo's shape */
+.project-card .apart-card_img.project-card_img {
+  aspect-ratio: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.project-card .project-card_img .apart-card_img_prim {
+  position: absolute;
+  inset: 0;
+}
+
+.project-card .project-card_img .img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 991px) {
+  .project-card .apart-card_img.project-card_img {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.project-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--_units---u-24) var(--_units---u-48);
+}
+
+.project-highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--_colors---base-1000--line);
+}
+
+.project-highlights li {
+  position: relative;
+  padding: 12px 0 12px 1.5em;
+  border-bottom: 1px solid var(--_colors---base-1000--line);
+}
+
+.project-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0.55em;
+  height: 1px;
+  background: var(--_global-colors---brand-500--terracotta);
 }

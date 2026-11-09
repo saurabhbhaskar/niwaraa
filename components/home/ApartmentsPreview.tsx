@@ -45,7 +45,7 @@ export function ApartmentsPreview() {
                               </p>
                               <div className="u-24"></div>
                               <div data-scroll-reveal="ctn" data-slider="ctn" className="apart-type-slide_btn">
-                                <a aria-label="Explore Living Rooms" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/services/living-rooms" className="btn w-inline-block">
+                                <a aria-label="Explore Living Rooms" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/projects/pashan-warm-greige-open-sanctuary" className="btn w-inline-block">
                                   <div className="btn_label">
                                     <div className="btn_label_text">
                                       <div hover="text" className="l1">Explore Living Rooms</div>
@@ -101,7 +101,7 @@ export function ApartmentsPreview() {
                               </p>
                               <div className="u-24"></div>
                               <div data-scroll-reveal="ctn" data-slider="ctn" className="apart-type-slide_btn">
-                                <a aria-label="Explore Kitchens" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/services/kitchens" className="btn w-inline-block">
+                                <a aria-label="Explore Kitchens" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/projects/kothrud-refreshing-mint-kitchen" className="btn w-inline-block">
                                   <div className="btn_label">
                                     <div className="btn_label_text"><div hover="text" className="l1">Explore Kitchens</div></div>
                                     <div className="btn_label_text is-2"><div hover="text" className="l1">Explore Kitchens</div></div>
@@ -153,7 +153,7 @@ export function ApartmentsPreview() {
                               </p>
                               <div className="u-24"></div>
                               <div data-scroll-reveal="ctn" data-slider="ctn" className="apart-type-slide_btn">
-                                <a aria-label="Explore Office Spaces" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/services/office-spaces" className="btn w-inline-block">
+                                <a aria-label="Explore Office Spaces" hover-btn="" hover-nav-item="" data-wf--btn--variant="sec" href="/#our-work" className="btn w-inline-block">
                                   <div className="btn_label">
                                     <div className="btn_label_text"><div hover="text" className="l1">Explore Office Spaces</div></div>
                                     <div className="btn_label_text is-2"><div hover="text" className="l1">Explore Office Spaces</div></div>

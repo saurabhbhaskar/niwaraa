@@ -1,5 +1,5 @@
-import { services } from '@/data/services';
-import { ServiceCard } from '@/components/services/ServiceCard';
+import { projects } from '@/data/projects';
+import { ProjectCard } from '@/components/projects/ProjectCard';
 
 export function Concept() {
   return (
@@ -12,8 +12,8 @@ export function Concept() {
                 <div className="loc-services-s">
                   <div className="apart-cms w-dyn-list">
                     <div role="list" className="apart-cms_list loc-services-cards w-dyn-items">
-                      {services.map((service) => (
-                        <ServiceCard key={service.slug} service={service} />
+                      {projects.map((project) => (
+                        <ProjectCard key={project.slug} project={project} />
                       ))}
                     </div>
                   </div>

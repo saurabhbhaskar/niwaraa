@@ -6,7 +6,7 @@ type PageMetadataInput = {
   description?: string;
   /** Path only, e.g. `/contact` */
   path?: string;
-  /** Public path, e.g. `/images/living-rooms-1.png` */
+  /** Public path, e.g. `/images/projects/kharadi-luxury-salon/01.webp` */
   image?: string;
 };
 
