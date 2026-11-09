@@ -8,7 +8,7 @@ import '@/styles/globals.css';
 /** Contenedor de Google Tag Manager del sitio original. */
 const GTM_ID = 'GTM-WMDRV3P6';
 
-const TITLE = `${SITE_NAME} — Thoughtful Interior Design Studio in India`;
+const TITLE = `${SITE_NAME} Design & Build — Spaces for a Brighter Tomorrow`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

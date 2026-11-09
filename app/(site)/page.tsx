@@ -3,7 +3,7 @@ import { SITE_TAGLINE } from '@/lib/site';
 import { ScrollRail } from '@/components/layout/ScrollRail';
 
 export const metadata = buildPageMetadata({
-  title: 'Thoughtful Interior Design Studio in India',
+  title: 'NIWARAA Design & Build — Spaces for a Brighter Tomorrow',
   description: SITE_TAGLINE,
   path: '/',
 });

@@ -105,7 +105,7 @@ export function Developer() {
                           <div className="grid _6-columns">
                             <div className="other-card_info_desc">
                               <p data-accordion-card="p" className="p1 a-center">
-                                Thoughtful interiors. Timeless spaces. Residential and commercial interior design across India.
+                                Spaces for a brighter tomorrow — design &amp; build for residential and commercial spaces, from first idea to handover.
                               </p>
                               <div className="u-32"></div>
                               <div data-accordion-card="ctn" className="info_divider"><div className="line-h"></div></div>

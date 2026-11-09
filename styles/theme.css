@@ -977,6 +977,74 @@ html[data-scroll-locked] .wa-float {
 }
 
 
+/* "Design & Build" script: straight and centred directly under NIWARAA
+ * (the original tilted, overlapping placement read as a jumble with the
+ * longer descriptor). One line, scaled to sit within the name's width. */
+.hero-s_logo_a,
+.preloader_logo_a {
+  transform: none;
+  margin: calc(var(--_units---u-4) * -1) 0 0;
+  align-self: center;
+  text-align: center;
+}
+
+.hero-s_logo_a .a2,
+.preloader_logo_a .a2 {
+  white-space: nowrap;
+  font-size: calc(var(--_fonts---a2--size) * 0.6);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.preloader_logo_a .a2.preloader_a {
+  font-size: calc(48rem / var(--_special-units---scale-ratio) * 0.75);
+}
+
+@media (max-width: 991px) {
+  /* Tagline: stack "Spaces for a / Brighter Tomorrow" centred under the logo
+   * instead of pinning the halves to opposite edges with a gap between. */
+  .hero-s_title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+  }
+
+  .hero-s_title .a-left,
+  .hero-s_title .a-right {
+    flex: none;
+    text-align: center;
+  }
+
+  .hero-s_title .span {
+    white-space: nowrap;
+  }
+
+  /* Loading screen: logo, then the full tagline stacked and centred */
+  .preloader_c .grid {
+    grid-template-rows: auto auto auto;
+    row-gap: 0;
+  }
+
+  .preloader_logo {
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+  .preloader_title-l {
+    display: block;
+    grid-area: 2 / 1 / 3 / -1;
+    margin-top: var(--_units---u-24);
+    text-align: center;
+  }
+
+  .preloader_title-r {
+    display: block;
+    grid-area: 3 / 1 / 4 / -1;
+    text-align: center;
+  }
+}
+
 /* Brand name: never break NIWARAA across lines (Safari draws the display face
  * slightly wider, and the split-letter reveal let the last "A" drop on phones). */
 .hero-s_logo .h1,

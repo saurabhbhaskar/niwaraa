@@ -24,16 +24,16 @@ export function Preloader() {
         </div>
         <div className="preloader_c">
           <div className="grid">
-            <div className="preloader_title-l"><div data-part="h" className="c1 a-center">Spaces,</div></div>
+            <div className="preloader_title-l"><div data-part="h" className="c1 a-center">Spaces for a</div></div>
             <div className="preloader_logo">
               <div data-part="h" className="h3 a-center">
                 Niwaraa
               </div>
               <div className="preloader_logo_a">
-                <div data-part="a" className="a2 preloader_a a-center">Interiors</div>
+                <div data-part="a" className="a2 preloader_a a-center">Design &amp; Build</div>
               </div>
             </div>
-            <div className="preloader_title-r"><div data-part="h" className="c1 a-center">Made Personal</div></div>
+            <div className="preloader_title-r"><div data-part="h" className="c1 a-center">Brighter Tomorrow</div></div>
           </div>
         </div>
         <div className="preloader_b">
@@ -44,9 +44,9 @@ export function Preloader() {
               </div>
               <div className="u-32"></div>
               <p data-part="p" className="l1 a-center">
-                Niwaraa
+                Niwaraa Design &amp; Build
                 <br />
-                Thoughtful interiors. Timeless spaces.
+                Spaces for a brighter tomorrow.
               </p>
             </div>
           </div>

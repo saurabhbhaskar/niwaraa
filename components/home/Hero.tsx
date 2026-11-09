@@ -24,14 +24,14 @@ export function Hero() {
                     Niwaraa
                   </h1>
                   <div className="hero-s_logo_a">
-                    <h2 data-prevent-flicker="" data-scroll-reveal="a" className="a2">Interiors</h2>
+                    <h2 data-prevent-flicker="" data-scroll-reveal="a" className="a2">Design &amp; Build</h2>
                   </div>
                 </div>
               </div>
               <div className="u-48"></div>
               <div className="grid">
                 <h3 className="hero-s_title h5">
-                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-left"><div className="span">Spaces,</div></span>
+                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-left"><div className="span">Spaces for a</div></span>
                   <div data-prevent-flicker="" data-scroll-reveal="ctn" className="hero-s_tabs">
                     <a hover-tab="" aria-label="Residential" hover-nav-item-l2="" data-tab-trigger="day" href="#" className="nav-item w-inline-block">
                       <div className="nav-item_label">
@@ -47,7 +47,7 @@ export function Hero() {
                       </div>
                     </a>
                   </div>
-                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-right"><div className="span">Made Personal</div></span>
+                  <span data-scroll-reveal="h" data-prevent-flicker="" className="a-right"><div className="span">Brighter Tomorrow</div></span>
                 </h3>
               </div>
             </div>

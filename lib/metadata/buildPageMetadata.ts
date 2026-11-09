@@ -16,12 +16,14 @@ export function buildPageMetadata({
   path = '',
   image = DEFAULT_OG_IMAGE,
 }: PageMetadataInput): Metadata {
-  const pageTitle = title.includes(SITE_NAME) ? title : `${title} — ${SITE_NAME}`;
+  // Titles that already name the brand are used as-is (no "— Niwaraa" suffix from the layout template).
+  const hasBrand = title.toLowerCase().includes(SITE_NAME.toLowerCase());
+  const pageTitle = hasBrand ? title : `${title} — ${SITE_NAME}`;
   const url = `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
   const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image.startsWith('/') ? image : `/${image}`}`;
 
   return {
-    title,
+    title: hasBrand ? { absolute: title } : title,
     description,
     alternates: { canonical: url },
     openGraph: {

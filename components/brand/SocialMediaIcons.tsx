@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
+import { INSTAGRAM_URL } from '@/lib/site';
 
 /**
- * LinkedIn, Facebook, Instagram — display only (no outbound links).
+ * LinkedIn, Facebook — display only (no profiles yet). Instagram links to the official profile.
  * `extra` renders additional `.social-btn` items at the end of the strip (e.g. WhatsApp).
  */
 
@@ -45,7 +46,15 @@ export function SocialMediaIcons({ className, extra }: { className?: string; ext
             </span>
           </div>
           <div role="listitem" className="social-cms_list_item w-dyn-item">
-            <span aria-label="Instagram" hover-social="" className="social-btn w-inline-block">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Niwaraa on Instagram"
+              title="Instagram"
+              hover-social=""
+              className="social-btn w-inline-block is-link"
+            >
               <div hover="ico" className="ico-16">
                 <div className="ico w-embed">
                   <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +68,7 @@ export function SocialMediaIcons({ className, extra }: { className?: string; ext
               <div data-comma="" className="social-btn_line">
                 <div className="line-h"></div>
               </div>
-            </span>
+            </a>
           </div>
           {extra ? (
             <div role="listitem" className="social-cms_list_item w-dyn-item">

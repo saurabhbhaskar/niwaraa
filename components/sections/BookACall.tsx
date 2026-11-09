@@ -75,7 +75,8 @@ export function BookACall({ showToTop = false }: { showToTop?: boolean }) {
             <div className="footer-s_b">
               <div className="grid">
                 <div className="footer-s_info">
-                  <div data-text="p" className="l1">Niwaraa.</div>
+                  <div data-text="p" className="l1">Niwaraa Design &amp; Build</div>
+                  <div data-text="p" className="l1 reg">Spaces for a brighter tomorrow.</div>
                   <div data-text="p" className="l1 reg no-wrap">
                     ©
                     <span className="year">2026</span>
